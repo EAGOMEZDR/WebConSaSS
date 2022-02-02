@@ -1,0 +1,79 @@
+/*play-fair
+semi-bold 600 italic*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+/*cinzel semibold 600*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+/*roboto */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&display=swap");
+/*SURANNA*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
+/*MARKAZI*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Markazi+Text:wght@500&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
+h1 {
+  font-family: 'Suranna', serif;
+  font-size: 3.5vh;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2.1vh;
+}
+
+h4 {
+  font-size: 1.6vh;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.redesSociales__li a img {
+  height: 5vh;
+  width: auto;
+}
+
+.mainIndex img {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 60vh;
+  width: auto;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  overflow: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  color: white;
+}
+
+title {
+  display: none;
+}
+
+header {
+  padding: 2vh 4vh;
+}
+
+@media (max-width: 1000px) {
+  .navbar-toogler {
+    position: absolute;
+    margin-right: 50vh;
+  }
+  .navbar2 {
+    margin-right: 0;
+  }
+  .navbar2 div ul {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
