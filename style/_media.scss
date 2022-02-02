@@ -1,20 +1,134 @@
-@media (max-width:1000px){
-    
-    .navbar-toogler{
-        position:absolute;
-        margin-right:50vh;
+/*MOBILE*/
+
+@media (max-width:721px){
+    header{
+        position:fixed;
+        top:0;
+        z-index: 0;
+        opacity: 95%;
+        margin: 0;
     }
-    .navbar2{
-        margin-right:0;
-        div{
-            ul{
-                text-align: center;
-            }
-        }
+
+    .navbar-toggler{
+        position:fixed;
+        top:0;
+        right:0;
+        margin-right:30vh;
+        margin-top:5vh;
+        background-color: black;
+        border: 1vh solid black;
+        border-radius: 3%;
     }
-    
 }
 
 
 
 
+@media (min-width:722px) and (max-width:1100px){
+    
+    header{
+        position:fixed;
+        top:0;
+        z-index: 0;
+        opacity: 95%;
+        margin: 0;
+    }
+
+    .navbar-toggler{
+        position:fixed;
+        top:0;
+        right:0;
+        margin-right:30vh;
+        margin-top:5vh;
+        background-color: black;
+        border: 1vh solid black;
+        border-radius: 3%;
+    }
+
+}
+
+
+/* ESCRITORIO */
+
+@media (min-width:1101px) and (max-width:5000px){
+
+    header{
+        position:fixed;
+        top:0;
+        z-index: 200;
+        opacity: 95%;
+        margin: 2vh auto 0 auto;
+    }
+
+    .mainIndex{
+
+        section{
+            
+            .contenedor_imagen{
+                height: 50vh;
+                width: auto;
+                overflow-block:0;
+            }
+       
+            .items{
+                display: inline-flex;
+                justify-content: space-evenly;
+                height: auto;
+                width: auto;
+                .cuadrado1,.cuadrado2,.cuadrado3{
+                    justify-content:space-between;
+                    height: 23vh;
+                    width: 50vh;
+                    padding:1vh;
+                    margin:1vh;
+                    background-color:rgba(155, 154, 153, 0.871);
+                    border-radius: 12%;
+                    z-index: 100;
+                    position: relative;
+                    bottom:5vh;
+                    border: .5vh solid rgba(0, 0, 0, 0.836);
+       
+                    p{
+                        align-self: center;
+                        text-align: justify;
+                    }
+                            
+                }
+    
+            }   
+    
+       
+        }
+    
+    } 
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "redes datos datos datos";
+    }
+
+   .redesSociales{
+       grid-area: redes;
+       display:inline-flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 2vh;
+   } 
+
+   .redesSociales__li img{
+       transition: width 2s;
+   }
+
+   .redesSociales__li img:hover{
+       width: 8vh;
+       height:auto;
+       
+   }
+
+
+    .datos{
+        grid-area: datos;
+    }
+
+}

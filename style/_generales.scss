@@ -1,36 +1,33 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: rgb(0, 0, 0);
     display: grid;
     color:white;
     
 }
 
 body{
-    grid-template-columns: 1fr;
-    grid-template-rows: .02fr 1fr .2fr;
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: 2fr;
+    grid-template-rows: .01fr 1fr .2fr;
     grid-template-areas: 
     "head"
     "main"
     "foot";
+    
 }
 
 header{
     grid-area: head;
-    position:sticky;
-    top:0;
-    z-index: 100;
-    opacity: 95%;
-    padding:0vh 4vh;
-    margin:0vh;
-}
+    background-color: rgba(0, 0, 0, 0.781);
 
-.navbar-toggler{
-    padding:.5rem 1.9rem;
+    nav{
+        z-index: 200;
+    }
 }
 
 main{
+    padding-top: 30vh;
     grid-area: main;
 }
 
@@ -46,4 +43,7 @@ title{
 
 
 
-
+.redesSociales__li a img{
+    height:5vh;
+    width:auto;
+}
