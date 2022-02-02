@@ -19,20 +19,36 @@ semi-bold 600 italic*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Markazi+Text:wght@500&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap');
 
+/*cookie*/
 
-h1 {
-    font-family: 'Suranna', serif;
-    font-size: 3.5vh;
-    text-decoration: underline;
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/*font-family: 'Cinzel', serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Suranna', serif;
+font-family: 'Cookie', cursive;*/
+
+header{
+    h1 {
+        font-family: 'Suranna', serif;
+        font-size: 4.5vh;
+        text-decoration: underline;
+    }
+    
+    h2{
+        font-size: 2.6vh;
+        font-family: 'Cinzel', serif;
+    }
+    
+    h4{
+        font-size: 3.3vh;
+        font-family:'Cookie', cursive;
+    }
+
 }
 
-h2{
-    font-size: 2.1vh;
-}
-
-h4{
-    font-size: 1.6vh;
-}
 
 h2,h3,h4,h5,h6 {
     font-family:'Roboto', sans-serif;

@@ -1,14 +1,34 @@
 
 .mainIndex{
 
-     img{
-        position:sticky;
-        height: 60vh;
-        width: auto;
-        margin:auto;
-        align-self: center;
-        justify-self: center;
-        overflow:auto;
-         
+    section{
+
+
+        img{
+            position:relative;
+            height: 80vh;
+            width: auto;
+            align-self: center;
+            justify-self: center;
+            overflow:auto;
+        }
+
+        div{
+
+            p{
+                height: 20vh;
+                width: 50vh;
+                text-align: justify;
+                padding-top: 10vh;
+                margin:auto auto;
+                    
+            }
+
+
+        }
+
+    
     }
+
+
 }

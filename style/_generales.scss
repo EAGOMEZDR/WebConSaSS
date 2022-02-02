@@ -7,14 +7,42 @@
     
 }
 
+body{
+    grid-template-columns: 1fr;
+    grid-template-rows: .02fr 1fr .2fr;
+    grid-template-areas: 
+    "head"
+    "main"
+    "foot";
+}
+
+header{
+    grid-area: head;
+    position:sticky;
+    top:0;
+    z-index: 100;
+    opacity: 95%;
+    padding:0vh 4vh;
+    margin:0vh;
+}
+
+.navbar-toggler{
+    padding:.5rem 1.9rem;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: foot;
+}
+
 
 title{
     display: none;
 }
 
-header{
-    padding:2vh 4vh;
-}
 
 
 

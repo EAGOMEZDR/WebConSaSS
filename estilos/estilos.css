@@ -9,18 +9,28 @@ semi-bold 600 italic*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
 /*MARKAZI*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Markazi+Text:wght@500&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
-h1 {
+/*cookie*/
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+/*font-family: 'Cinzel', serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Suranna', serif;
+font-family: 'Cookie', cursive;*/
+header h1 {
   font-family: 'Suranna', serif;
-  font-size: 3.5vh;
+  font-size: 4.5vh;
   text-decoration: underline;
 }
 
-h2 {
-  font-size: 2.1vh;
+header h2 {
+  font-size: 2.6vh;
+  font-family: 'Cinzel', serif;
 }
 
-h4 {
-  font-size: 1.6vh;
+header h4 {
+  font-size: 3.3vh;
+  font-family: 'Cookie', cursive;
 }
 
 h2, h3, h4, h5, h6 {
@@ -33,18 +43,24 @@ h2, h3, h4, h5, h6 {
   width: auto;
 }
 
-.mainIndex img {
-  position: -webkit-sticky;
-  position: sticky;
-  height: 60vh;
+.mainIndex section img {
+  position: relative;
+  height: 80vh;
   width: auto;
-  margin: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
   overflow: auto;
+}
+
+.mainIndex section div p {
+  height: 20vh;
+  width: 50vh;
+  text-align: justify;
+  padding-top: 10vh;
+  margin: auto auto;
 }
 
 * {
@@ -56,12 +72,45 @@ h2, h3, h4, h5, h6 {
   color: white;
 }
 
-title {
-  display: none;
+body {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: .02fr 1fr .2fr;
+      grid-template-rows: .02fr 1fr .2fr;
+      grid-template-areas: "head" "main" "foot";
 }
 
 header {
-  padding: 2vh 4vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: head;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 95%;
+  padding: 0vh 4vh;
+  margin: 0vh;
+}
+
+.navbar-toggler {
+  padding: .5rem 1.9rem;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foot;
+}
+
+title {
+  display: none;
 }
 
 @media (max-width: 1000px) {
