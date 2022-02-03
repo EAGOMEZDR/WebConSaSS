@@ -1,0 +1,58 @@
+/*INDEX*/
+
+
+
+/*SERVICIOS*/
+
+
+
+/*NOSOTROS*/
+
+
+
+/*CONTACTENOS*/
+
+
+
+/*LINKS*/
+
+.mainLinks{
+    text-align: center;
+    
+    section{
+        padding:2vh;
+        margin:2vh;
+        
+        h2{
+            text-decoration: underline;
+            padding: 2vh 0;
+        }
+        
+        ul{
+            padding-bottom: 2vh;
+            li{
+                padding-bottom: 2vh;
+                a{
+                    color:blanchedalmond;
+                    text-decoration: none;
+                    font-size: 2.5vh;
+                    transition:color .5s, underline.1s;
+                    &:hover{
+                        color:rgb(88, 194, 255);
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .mainLinks__div{
+        iframe{
+            margin:0 auto;
+            width:66vh;
+            height:38vh;
+        }
+    }
+}
