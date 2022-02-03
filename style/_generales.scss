@@ -94,6 +94,12 @@ footer{
             li{
                 padding:1vh;
                 margin:1vh;
+                a{
+                    img{
+                        height:5vh;
+                        width:5vh;
+                    }
+                }
             }
         }
     }
@@ -108,7 +114,3 @@ title{
 
 
 
-.redesSociales__li a img{
-    height:5vh;
-    width:auto;
-}

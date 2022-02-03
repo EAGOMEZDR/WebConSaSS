@@ -149,13 +149,13 @@ footer .redesSociales ul li {
   margin: 1vh;
 }
 
-title {
-  display: none;
+footer .redesSociales ul li a img {
+  height: 5vh;
+  width: 5vh;
 }
 
-.redesSociales__li a img {
-  height: 5vh;
-  width: auto;
+title {
+  display: none;
 }
 
 /*MOBILE*/
@@ -501,9 +501,13 @@ title {
             align-items: center;
     padding-top: 2vh;
   }
-  footer .redesSociales__li img:hover {
-    width: 8vh;
-    height: auto;
+  footer .redesSociales ul li a img {
+    -webkit-transition: height 2s, width 1.5s;
+    transition: height 2s, width 1.5s;
+  }
+  footer .redesSociales ul li a img:hover {
+    height: 8vh;
+    width: auto;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

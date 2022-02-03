@@ -359,6 +359,7 @@
         
         .datos{
             grid-area: datos;
+
         }
 
         .redesSociales{
@@ -367,13 +368,23 @@
             flex-direction: column;
             align-items: center;
             padding-top: 2vh;
+
+            ul{
+                li{
+                    a{
+                        img{
+                            transition: height 2s, width 1.5s;
+                            &:hover {
+                                height: 8vh;
+                                width:auto;
+
+                            }
+                        }
+                    }
+                }
+            }
         } 
         
-        .redesSociales__li img:hover{
-            width: 8vh;
-            height:auto; 
-         }
-     
 
 
     }
