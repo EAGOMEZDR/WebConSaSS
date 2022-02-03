@@ -20,7 +20,6 @@ font-family: 'Cookie', cursive;*/
 header h1 {
   font-family: 'Suranna', serif;
   font-size: 4.5vh;
-  text-decoration: underline;
 }
 
 header h2 {
@@ -36,6 +35,10 @@ header h4 {
 h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+}
+
+.link-navi {
+  font-size: 2.5vh;
 }
 
 * {
@@ -63,7 +66,11 @@ header {
 }
 
 header nav {
-  z-index: 200;
+  z-index: 5000;
+}
+
+.container-fluid {
+  z-index: 5000;
 }
 
 main {
@@ -93,7 +100,7 @@ title {
   header {
     position: fixed;
     top: 0;
-    z-index: 0;
+    z-index: 500;
     opacity: 95%;
     margin: 0;
   }
@@ -101,11 +108,63 @@ title {
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 30vh;
+    margin-right: 10vh;
     margin-top: 5vh;
     background-color: black;
     border: 1vh solid black;
     border-radius: 3%;
+  }
+  .mainIndex section .contenedor_palacio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio {
+    height: auto;
+    width: 100%;
+    overflow-block: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex section .items {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 30vh;
+    width: 80vh;
+    padding: 3vh;
+    margin: 0 auto 3vh auto;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 12%;
+    z-index: 100;
+    position: relative;
+    bottom: 5vh;
+    border-bottom: 0.5vh solid rgba(255, 255, 255, 0.514);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: justify;
   }
 }
 
@@ -127,21 +186,22 @@ title {
     border: 1vh solid black;
     border-radius: 3%;
   }
-}
-
-/* ESCRITORIO */
-@media (min-width: 1101px) and (max-width: 5000px) {
-  header {
-    position: fixed;
-    top: 0;
-    z-index: 200;
-    opacity: 95%;
-    margin: 2vh auto 0 auto;
+  .mainIndex section .contenedor_palacio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
   }
-  .mainIndex section .contenedor_imagen {
-    height: 50vh;
-    width: auto;
+  .mainIndex section .contenedor_palacio .palacio {
+    height: auto;
+    width: 100%;
     overflow-block: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mainIndex section .items {
     display: -webkit-inline-box;
@@ -154,19 +214,80 @@ title {
     width: auto;
   }
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 23vh;
-    width: 50vh;
+    width: 35vh;
     padding: 1vh;
-    margin: 1vh;
-    background-color: rgba(155, 154, 153, 0.871);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.74);
     border-radius: 12%;
     z-index: 100;
     position: relative;
     bottom: 5vh;
-    border: 0.5vh solid rgba(0, 0, 0, 0.836);
+    border-bottom: 0.5vh solid rgba(255, 255, 255, 0.514);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: justify;
+  }
+}
+
+/* ESCRITORIO */
+@media (min-width: 1101px) and (max-width: 5000px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    opacity: 95%;
+    margin: 2vh auto 0 auto;
+  }
+  .mainIndex section .contenedor_palacio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio {
+    height: auto;
+    width: 100%;
+    overflow-block: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex section .items {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: auto;
+    width: auto;
+  }
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 23vh;
+    width: 35vh;
+    padding: 1vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 12%;
+    z-index: 100;
+    position: relative;
+    bottom: 5vh;
+    border-bottom: 0.5vh solid rgba(255, 255, 255, 0.514);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
     -ms-flex-item-align: center;

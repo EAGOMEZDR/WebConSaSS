@@ -22,10 +22,12 @@ header{
     background-color: rgba(0, 0, 0, 0.781);
 
     nav{
-        z-index: 200;
+        z-index: 5000;
     }
 }
-
+.container-fluid{
+    z-index: 5000;
+}
 main{
     padding-top: 30vh;
     grid-area: main;

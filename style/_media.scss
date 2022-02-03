@@ -4,7 +4,7 @@
     header{
         position:fixed;
         top:0;
-        z-index: 0;
+        z-index: 500;
         opacity: 95%;
         margin: 0;
     }
@@ -13,12 +13,66 @@
         position:fixed;
         top:0;
         right:0;
-        margin-right:30vh;
+        margin-right:10vh;
         margin-top:5vh;
         background-color: black;
         border: 1vh solid black;
         border-radius: 3%;
+        
     }
+
+    .mainIndex{
+
+        section{
+            
+            .contenedor_palacio{
+
+                display:flex;
+                justify-content: center;
+
+                .palacio{
+                    height: auto;
+                    width: 100%;
+                    overflow-block:0;
+                    justify-content: center;
+                }
+
+            }
+
+       
+            .items{
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                width: auto;
+                .cuadrado1,.cuadrado2,.cuadrado3{
+                    justify-content:space-around;
+                    height: 30vh;
+                    width: 80vh;
+                    padding:3vh;
+                    margin:0 auto 3vh auto;
+                    background-color:rgba(0, 0, 0, 0.74);
+                    border-radius: 12%;
+                    z-index: 100;
+                    position: relative;
+                    bottom:5vh;
+                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    flex-wrap: wrap;
+       
+                    p{
+                        align-self: center;
+                        text-align: justify;
+                    }
+                            
+                }
+    
+            }   
+    
+       
+        }
+    
+    } 
 }
 
 
@@ -45,6 +99,61 @@
         border-radius: 3%;
     }
 
+
+
+    .mainIndex{
+
+        section{
+            
+            .contenedor_palacio{
+
+                display:flex;
+                justify-content: center;
+                justify-content: center;
+
+                .palacio{
+                    height: auto;
+                    width: 100%;
+                    overflow-block:0;
+                    justify-content: center;
+                }
+
+            }
+
+    
+            .items{
+                display: inline-flex;
+                justify-content: space-evenly;
+                height: auto;
+                width: auto;
+                .cuadrado1,.cuadrado2,.cuadrado3{
+                    justify-content:space-around;
+                    height: 23vh;
+                    width: 35vh;
+                    padding:1vh;
+                    margin:auto;
+                    background-color:rgba(0, 0, 0, 0.74);
+                    border-radius: 12%;
+                    z-index: 100;
+                    position: relative;
+                    bottom:5vh;
+                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    flex-wrap: wrap;
+    
+                    p{
+                        align-self: center;
+                        text-align: justify;
+                    }
+                            
+                }
+
+            }   
+
+    
+        }
+
+    } 
+
 }
 
 
@@ -64,11 +173,21 @@
 
         section{
             
-            .contenedor_imagen{
-                height: 50vh;
-                width: auto;
-                overflow-block:0;
+            .contenedor_palacio{
+
+                display:flex;
+                justify-content: center;
+                justify-content: center;
+
+                .palacio{
+                    height: auto;
+                    width: 100%;
+                    overflow-block:0;
+                    justify-content: center;
+                }
+
             }
+
        
             .items{
                 display: inline-flex;
@@ -76,17 +195,18 @@
                 height: auto;
                 width: auto;
                 .cuadrado1,.cuadrado2,.cuadrado3{
-                    justify-content:space-between;
+                    justify-content:space-around;
                     height: 23vh;
-                    width: 50vh;
+                    width: 35vh;
                     padding:1vh;
-                    margin:1vh;
-                    background-color:rgba(155, 154, 153, 0.871);
+                    margin:auto;
+                    background-color:rgba(0, 0, 0, 0.74);
                     border-radius: 12%;
                     z-index: 100;
                     position: relative;
                     bottom:5vh;
-                    border: .5vh solid rgba(0, 0, 0, 0.836);
+                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    flex-wrap: wrap;
        
                     p{
                         align-self: center;
