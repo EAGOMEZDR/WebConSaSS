@@ -53,8 +53,8 @@ body {
   background-color: black;
   -ms-grid-columns: 2fr;
       grid-template-columns: 2fr;
-  -ms-grid-rows: .01fr 1fr .2fr;
-      grid-template-rows: .01fr 1fr .2fr;
+  -ms-grid-rows: .01fr 1fr .1fr;
+      grid-template-rows: .01fr 1fr .1fr;
       grid-template-areas: "head" "main" "foot";
 }
 
@@ -62,7 +62,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: head;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.918);
 }
 
 header nav {
@@ -74,16 +74,79 @@ header nav {
 }
 
 main {
-  padding-top: 30vh;
+  padding-top: 23vh;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+}
+
+main .botonRed {
+  width: 25vh;
+  height: 8vh;
+  position: fixed;
+  bottom: 1.5vh;
+  right: 1.5vh;
+  z-index: 1000;
+}
+
+main .offcanvas {
+  opacity: 89%;
+}
+
+main .offcanvas .offcanvas-header {
+  background-color: black;
+  opacity: 100%;
+}
+
+main .offcanvas .offcanvas-body {
+  background-color: black;
+}
+
+main .offcanvas .offcanvas-body .firma {
+  position: relative;
+  bottom: 30vh;
+}
+
+.mainIndex {
+  padding-top: .13vh;
 }
 
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: foot;
+  padding-bottom: 8vh;
+}
+
+footer .datos {
+  display: inline-block;
+  text-align: center;
+}
+
+footer .datos h3 {
+  padding: 1vh;
+  margin-bottom: 1vh;
+  text-decoration: underline;
+}
+
+footer .redesSociales p {
+  font-size: 2vh;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+
+footer .redesSociales ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .redesSociales ul li {
+  padding: 1vh;
+  margin: 1vh;
 }
 
 title {
@@ -96,23 +159,26 @@ title {
 }
 
 /*MOBILE*/
-@media (max-width: 721px) {
+@media (max-width: 500px) {
   header {
     position: fixed;
     top: 0;
     z-index: 500;
-    opacity: 95%;
+    opacity: 98%;
     margin: 0;
   }
   .navbar-toggler {
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 10vh;
+    margin-right: .3vh;
     margin-top: 5vh;
     background-color: black;
     border: 1vh solid black;
     border-radius: 3%;
+  }
+  main {
+    padding-top: 20vh;
   }
   .mainIndex section .contenedor_palacio {
     display: -webkit-box;
@@ -122,7 +188,7 @@ title {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .mainIndex section .contenedor_palacio .palacio {
+  .mainIndex section .contenedor_palacio .palacio2 {
     height: auto;
     width: 100%;
     overflow-block: 0;
@@ -130,10 +196,11 @@ title {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .mainIndex section .contenedor_palacio .palacio1 {
+    display: none;
+  }
   .mainIndex section .items {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -143,12 +210,13 @@ title {
             justify-content: center;
     height: auto;
     width: auto;
+    margin: auto;
   }
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 30vh;
-    width: 80vh;
+    height: 20vh;
+    width: auto;
     padding: 3vh;
     margin: 0 auto 3vh auto;
     background-color: rgba(0, 0, 0, 0.74);
@@ -166,13 +234,104 @@ title {
         align-self: center;
     text-align: justify;
   }
+  footer p {
+    font-size: 3vh;
+    padding: 3vh 0;
+  }
+  #offcanvasExample {
+    z-index: 6000;
+  }
 }
 
-@media (min-width: 722px) and (max-width: 1100px) {
+@media (min-width: 501px) and (max-width: 810px) {
   header {
     position: fixed;
     top: 0;
-    z-index: 0;
+    z-index: 500;
+    opacity: 98%;
+    margin: 0;
+  }
+  .navbar-toggler {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 4vh;
+    margin-top: 5vh;
+    background-color: black;
+    border: 1vh solid black;
+    border-radius: 3%;
+  }
+  main {
+    padding-top: 20vh;
+  }
+  .mainIndex section .contenedor_palacio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio2 {
+    height: auto;
+    width: 100%;
+    overflow-block: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio1 {
+    display: none;
+  }
+  .mainIndex section .items {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+  }
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 20vh;
+    width: auto;
+    padding: 3vh;
+    margin: 0 auto 3vh auto;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 12%;
+    z-index: 100;
+    position: relative;
+    bottom: 5vh;
+    border-bottom: 0.5vh solid rgba(255, 255, 255, 0.514);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: justify;
+  }
+  footer p {
+    font-size: 3vh;
+    padding: 3vh 0;
+  }
+  #offcanvasExample {
+    z-index: 6000;
+  }
+}
+
+@media (min-width: 811px) and (max-width: 1280px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 5000;
     opacity: 95%;
     margin: 0;
   }
@@ -180,7 +339,7 @@ title {
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 30vh;
+    margin-right: 10vh;
     margin-top: 5vh;
     background-color: black;
     border: 1vh solid black;
@@ -190,18 +349,25 @@ title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     justify-content: center;
   }
-  .mainIndex section .contenedor_palacio .palacio {
+  .mainIndex section .contenedor_palacio .palacio2 {
     height: auto;
     width: 100%;
     overflow-block: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio1 {
+    display: none;
   }
   .mainIndex section .items {
     display: -webkit-inline-box;
@@ -235,10 +401,17 @@ title {
         align-self: center;
     text-align: justify;
   }
+  footer p {
+    font-size: 3vh;
+    padding: 3vh 0;
+  }
+  #offcanvasExample {
+    z-index: 6000;
+  }
 }
 
 /* ESCRITORIO */
-@media (min-width: 1101px) and (max-width: 5000px) {
+@media (min-width: 1281px) and (max-width: 5000px) {
   header {
     position: fixed;
     top: 0;
@@ -255,13 +428,16 @@ title {
             justify-content: center;
     justify-content: center;
   }
-  .mainIndex section .contenedor_palacio .palacio {
+  .mainIndex section .contenedor_palacio .palacio1 {
     height: auto;
     width: 100%;
     overflow-block: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .mainIndex section .contenedor_palacio .palacio2 {
+    display: none;
   }
   .mainIndex section .items {
     display: -webkit-inline-box;
@@ -270,8 +446,9 @@ title {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: auto;
+    height: 11vh;
     width: auto;
+    background-color: black;
   }
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
     -ms-flex-pack: distribute;
@@ -280,11 +457,11 @@ title {
     width: 35vh;
     padding: 1vh;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgba(0, 0, 0, 0.603);
     border-radius: 12%;
     z-index: 100;
     position: relative;
-    bottom: 5vh;
+    bottom: 20vh;
     border-bottom: 0.5vh solid rgba(255, 255, 255, 0.514);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -302,7 +479,13 @@ title {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: "redes datos datos datos";
   }
-  .redesSociales {
+  footer .datos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: datos;
+  }
+  footer .redesSociales {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: redes;
@@ -318,19 +501,9 @@ title {
             align-items: center;
     padding-top: 2vh;
   }
-  .redesSociales__li img {
-    -webkit-transition: width 2s;
-    transition: width 2s;
-  }
-  .redesSociales__li img:hover {
+  footer .redesSociales__li img:hover {
     width: 8vh;
     height: auto;
-  }
-  .datos {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: datos;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

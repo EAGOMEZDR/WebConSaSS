@@ -1,11 +1,11 @@
 /*MOBILE*/
 
-@media (max-width:721px){
+@media (max-width:500px){
     header{
         position:fixed;
         top:0;
         z-index: 500;
-        opacity: 95%;
+        opacity: 98%;
         margin: 0;
     }
 
@@ -13,14 +13,17 @@
         position:fixed;
         top:0;
         right:0;
-        margin-right:10vh;
+        margin-right:.3vh;
         margin-top:5vh;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         border: 1vh solid black;
         border-radius: 3%;
         
     }
 
+    main{
+        padding-top:20vh;
+    }
     .mainIndex{
 
         section{
@@ -30,26 +33,31 @@
                 display:flex;
                 justify-content: center;
 
-                .palacio{
+                .palacio2{
                     height: auto;
                     width: 100%;
                     overflow-block:0;
                     justify-content: center;
                 }
 
+                .palacio1{
+                    display: none;
+                }
+
             }
 
        
             .items{
-                display: inline-flex;
+                display: block;
                 flex-direction: column;
                 justify-content: center;
                 height: auto;
                 width: auto;
+                margin:auto;
                 .cuadrado1,.cuadrado2,.cuadrado3{
                     justify-content:space-around;
-                    height: 30vh;
-                    width: 80vh;
+                    height: 20vh;
+                    width: auto;
                     padding:3vh;
                     margin:0 auto 3vh auto;
                     background-color:rgba(0, 0, 0, 0.74);
@@ -73,18 +81,24 @@
         }
     
     } 
+
+    footer{
+        p{
+            font-size: 3vh;
+            padding:3vh 0;
+        }
+    }
+    #offcanvasExample{
+        z-index: 6000;
+    }
 }
 
-
-
-
-@media (min-width:722px) and (max-width:1100px){
-    
+@media (min-width:501px) and (max-width:810px){
     header{
         position:fixed;
         top:0;
-        z-index: 0;
-        opacity: 95%;
+        z-index: 500;
+        opacity: 98%;
         margin: 0;
     }
 
@@ -92,15 +106,17 @@
         position:fixed;
         top:0;
         right:0;
-        margin-right:30vh;
+        margin-right:4vh;
         margin-top:5vh;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         border: 1vh solid black;
         border-radius: 3%;
+        
     }
 
-
-
+    main{
+        padding-top:20vh;
+    }
     .mainIndex{
 
         section{
@@ -109,97 +125,34 @@
 
                 display:flex;
                 justify-content: center;
-                justify-content: center;
 
-                .palacio{
+                .palacio2{
                     height: auto;
                     width: 100%;
                     overflow-block:0;
                     justify-content: center;
                 }
 
-            }
-
-    
-            .items{
-                display: inline-flex;
-                justify-content: space-evenly;
-                height: auto;
-                width: auto;
-                .cuadrado1,.cuadrado2,.cuadrado3{
-                    justify-content:space-around;
-                    height: 23vh;
-                    width: 35vh;
-                    padding:1vh;
-                    margin:auto;
-                    background-color:rgba(0, 0, 0, 0.74);
-                    border-radius: 12%;
-                    z-index: 100;
-                    position: relative;
-                    bottom:5vh;
-                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
-                    flex-wrap: wrap;
-    
-                    p{
-                        align-self: center;
-                        text-align: justify;
-                    }
-                            
-                }
-
-            }   
-
-    
-        }
-
-    } 
-
-}
-
-
-/* ESCRITORIO */
-
-@media (min-width:1101px) and (max-width:5000px){
-
-    header{
-        position:fixed;
-        top:0;
-        z-index: 200;
-        opacity: 95%;
-        margin: 2vh auto 0 auto;
-    }
-
-    .mainIndex{
-
-        section{
-            
-            .contenedor_palacio{
-
-                display:flex;
-                justify-content: center;
-                justify-content: center;
-
-                .palacio{
-                    height: auto;
-                    width: 100%;
-                    overflow-block:0;
-                    justify-content: center;
+                .palacio1{
+                    display: none;
                 }
 
             }
 
        
             .items{
-                display: inline-flex;
-                justify-content: space-evenly;
+                display: block;
+                flex-direction: column;
+                justify-content: center;
                 height: auto;
                 width: auto;
+                margin:auto;
                 .cuadrado1,.cuadrado2,.cuadrado3{
                     justify-content:space-around;
-                    height: 23vh;
-                    width: 35vh;
-                    padding:1vh;
-                    margin:auto;
+                    height: 20vh;
+                    width: auto;
+                    padding:3vh;
+                    margin:0 auto 3vh auto;
                     background-color:rgba(0, 0, 0, 0.74);
                     border-radius: 12%;
                     z-index: 100;
@@ -223,32 +176,207 @@
     } 
 
     footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "redes datos datos datos";
+        p{
+            font-size: 3vh;
+            padding:3vh 0;
+        }
+    }
+    #offcanvasExample{
+        z-index: 6000;
+    }
+}
+
+
+@media (min-width:811px) and (max-width:1280px){
+    
+    header{
+        position:fixed;
+        top:0;
+        z-index: 5000;
+        opacity: 95%;
+        margin: 0;
     }
 
-   .redesSociales{
-       grid-area: redes;
-       display:inline-flex;
-       flex-direction: column;
-       align-items: center;
-       padding-top: 2vh;
-   } 
-
-   .redesSociales__li img{
-       transition: width 2s;
-   }
-
-   .redesSociales__li img:hover{
-       width: 8vh;
-       height:auto;
-       
-   }
+    .navbar-toggler{
+        position:fixed;
+        top:0;
+        right:0;
+        margin-right:10vh;
+        margin-top:5vh;
+        background-color: black;
+        border: 1vh solid black;
+        border-radius: 3%;
+    }
 
 
-    .datos{
-        grid-area: datos;
+
+    .mainIndex{
+
+        section{
+            
+            .contenedor_palacio{
+
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: center;
+
+                .palacio2{
+                    height: auto;
+                    width: 100%;
+                    overflow-block:0;
+                    justify-content: center;
+                }
+
+                .palacio1{
+                    display: none;
+                }
+
+            }
+
+    
+            .items{
+                display: inline-flex;
+                justify-content: space-evenly;
+                height: auto;
+                width: auto;
+                .cuadrado1,.cuadrado2,.cuadrado3{
+                    justify-content:space-around;
+                    height: 23vh;
+                    width: 35vh;
+                    padding:1vh;
+                    margin:auto;
+                    background-color:rgba(0, 0, 0, 0.74);
+                    border-radius: 12%;
+                    z-index: 100;
+                    position: relative;
+                    bottom:5vh;
+                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    flex-wrap: wrap;
+    
+                    p{
+                        align-self: center;
+                        text-align: justify;
+                    }
+                            
+                }
+
+            }   
+
+    
+        }
+
+    } 
+    footer{
+        p{
+            font-size: 3vh;
+            padding:3vh 0;
+        }
+    }
+    #offcanvasExample{
+        z-index: 6000;
     }
 
 }
+
+
+/* ESCRITORIO */
+
+@media (min-width:1281px) and (max-width:5000px){
+
+    header{
+        position:fixed;
+        top:0;
+        z-index: 200;
+        opacity: 95%;
+        margin: 2vh auto 0 auto;
+    }
+
+    .mainIndex{
+
+        section{
+            
+            .contenedor_palacio{
+
+                display:flex;
+                justify-content: center;
+                justify-content: center;
+
+                .palacio1{
+                    height: auto;
+                    width: 100%;
+                    overflow-block:0;
+                    justify-content: center;
+                }
+
+                .palacio2{
+                    display: none;
+                }
+
+            }
+
+       
+            .items{
+                display: inline-flex;
+                justify-content: space-evenly;
+                height: 11vh;
+                width: auto;
+                background-color: black;
+                .cuadrado1,.cuadrado2,.cuadrado3{
+                    justify-content:space-around;
+                    height: 23vh;
+                    width: 35vh;
+                    padding:1vh;
+                    margin:auto;
+                    background-color:rgba(0, 0, 0, 0.603);
+                    border-radius: 12%;
+                    z-index: 100;
+                    position: relative;
+                    bottom:20vh;
+                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    flex-wrap: wrap;
+       
+                    p{
+                        align-self: center;
+                        text-align: justify;
+                    }
+                            
+                }
+    
+            }   
+    
+       
+        }
+        
+    
+    } 
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "redes datos datos datos";
+       
+        
+        .datos{
+            grid-area: datos;
+        }
+
+        .redesSociales{
+            grid-area: redes;
+            display:inline-flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2vh;
+        } 
+        
+        .redesSociales__li img:hover{
+            width: 8vh;
+            height:auto; 
+         }
+     
+
+
+    }
+
+}
+   
