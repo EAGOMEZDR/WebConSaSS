@@ -3,21 +3,51 @@
 
 
 /*SERVICIOS*/
+.mainServicios{
+    background-color: rgba(0, 0, 0, 0.685);
+    background-image:url(../imagenes/wallServicios.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
 
 
 
 /*NOSOTROS*/
+.mainNosotros{
+    background-color: rgba(0, 0, 0, 0.685);
+    background-image:url(../imagenes/martillo.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
 
 
 
 /*CONTACTENOS*/
 
-
+.mainContacto{
+    background-color: rgba(0, 0, 0, 0.534);
+    background-image: url(../imagenes/martilloycodigo.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-right:4vh;
+    padding-left:3vh;
+    h2{
+        text-decoration: underline;
+        padding: 2vh 0;
+    }
+}
+.form-black{
+    color:black;
+}
 
 /*LINKS*/
 
 .mainLinks{
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-image:url(../imagenes/wallLinks.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
     
     section{
         padding:2vh;
@@ -51,8 +81,6 @@
     .mainLinks__div{
         iframe{
             margin:0 auto;
-            width:66vh;
-            height:38vh;
         }
     }
 }

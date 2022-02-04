@@ -23,6 +23,9 @@ semi-bold 600 italic*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
+/*raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 /*font-family: 'Cinzel', serif;
 font-family: 'Markazi Text', serif;
 font-family: 'Playfair Display', serif;
@@ -48,6 +51,10 @@ header{
 
 }
 
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
 
 h2,h3,h4,h5,h6 {
     font-family:'Roboto', sans-serif;
@@ -55,5 +62,5 @@ h2,h3,h4,h5,h6 {
 }
 
 .link-navi{
-    font-size: 2.5vh;
+    font-size: 1.9vh;
 }
