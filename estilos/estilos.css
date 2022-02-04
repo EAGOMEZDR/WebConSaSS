@@ -56,6 +56,7 @@ h2, h3, h4, h5, h6 {
   background-image: url(../imagenes/wallServicios.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+  padding-bottom: 30vh;
 }
 
 /*NOSOTROS*/
@@ -866,5 +867,88 @@ title {
     height: 8vh;
     width: auto;
   }
+}
+
+.cajas_fuero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cajas_fuero .laboral {
+  justify-items: center;
+}
+
+.cajas_fuero .laboral .listaLaboral {
+  text-align: center;
+  background-color: antiquewhite;
+  width: 45vh;
+}
+
+.cajas_fuero .laboral .botonLaboral {
+  background-color: #51b9ff;
+  height: 10vh;
+  width: 45vh;
+  padding: 1vh;
+  margin: 5vh 5vh 0 5vh;
+  text-align: center;
+}
+
+.cajas_fuero .laboral .botonLaboral:hover + .listaLaboral {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cajas_fuero .civil .listaCivil {
+  display: none;
+}
+
+.cajas_fuero .civil .botonCivil {
+  background-color: #51b9ff;
+  height: 10vh;
+  width: 30vh;
+  padding: 1vh;
+}
+
+.cajas_fuero .civil .botonCivil:hover + .listaCivil {
+  display: block;
+}
+
+.cajas_fuero .penal .listaPenal {
+  display: none;
+}
+
+.cajas_fuero .penal .botonPenal {
+  background-color: #51b9ff;
+  height: 10vh;
+  width: 30vh;
+  padding: 1vh;
+}
+
+.cajas_fuero .penal .botonPenal:hover + .listaPenal {
+  display: block;
+}
+
+.cajas_fuero .admin .listaAdmin {
+  display: none;
+}
+
+.cajas_fuero .admin .botonAdmin {
+  background-color: #51b9ff;
+  height: 10vh;
+  width: 30vh;
+  padding: 1vh;
+}
+
+.cajas_fuero .admin .botonAdmin:hover + .listaAdmin {
+  display: block;
 }
 /*# sourceMappingURL=estilos.css.map */

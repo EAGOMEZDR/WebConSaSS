@@ -1,0 +1,95 @@
+
+.cajas_fuero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+    .laboral{
+        justify-items: center;
+         
+        .listaLaboral{
+        //display: none;
+        text-align: center;
+        background-color: antiquewhite;
+        width: 45vh;
+
+        }
+
+        .botonLaboral{
+            background-color: rgb(81, 185, 255);
+            height:10vh;
+            width: 45vh;
+            padding: 1vh;
+            margin:5vh 5vh 0 5vh;
+            text-align: center;
+            &:hover + .listaLaboral {
+                display: block;
+                margin-bottom: 0;
+                padding-bottom: 0;
+               
+            }
+        }
+
+    }
+
+    .civil{
+
+        
+        .listaCivil{
+        display: none;
+
+        }
+
+        .botonCivil{
+            background-color: rgb(81, 185, 255);
+            height:10vh;
+            width: 30vh;
+            padding: 1vh;
+            &:hover + .listaCivil {
+                display: block;       
+            }
+        }
+
+    }
+
+    .penal{
+
+        
+        .listaPenal{
+        display: none;
+
+        }
+
+        .botonPenal{
+            background-color: rgb(81, 185, 255);
+            height:10vh;
+            width: 30vh;
+            padding: 1vh;
+            &:hover + .listaPenal {
+                display: block;       
+            }
+        }
+
+    }
+
+    .admin{
+
+        
+        .listaAdmin{
+        display: none;
+
+        }
+
+        .botonAdmin{
+            background-color: rgb(81, 185, 255);
+            height:10vh;
+            width: 30vh;
+            padding: 1vh;
+            &:hover + .listaAdmin {
+                display: block;       
+            }
+        }
+
+    }
+}
