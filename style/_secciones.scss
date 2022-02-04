@@ -6,9 +6,176 @@
 .mainServicios{
     background-color: rgba(0, 0, 0, 0.685);
     background-image:url(../imagenes/wallServicios.jpg);
-    background-size: cover;
+    background-size:auto;
     background-blend-mode: multiply;
-    padding-bottom: 30vh;
+
+    .mainServicios__section{
+        text-align: center;
+        text-justify: auto;
+        h2{
+            padding: 2vh;
+            margin-bottom: 5vh;
+            margin-top:10vh;
+            text-decoration:underline ;
+        }
+        h5{
+            margin:0 8vh;
+            text-align: center;
+        }
+    }
+
+    .cajas_fuero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        
+        .laboral{
+            justify-items: center;
+             
+            .listaLaboral{
+            visibility: hidden;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.623);
+            width: 23vh;
+            border-radius: 0 0 10% 10%;
+                li{
+                    color:rgb(255, 255, 255);
+                    padding: 1vh .5vh;
+                    padding-right:2rem;
+                    margin: .5vh;
+                                   
+                }
+            }
+    
+            .botonLaboral{
+                background-color: rgba(103, 245, 255, 0.514);
+                height:10vh;
+                width: 25vh;
+                padding: 1vh;
+                margin:5vh 5vh 0 5vh;
+                text-align: center;
+                align-content: center;
+                border-radius: .8vh;
+                border: .2vh solid black;
+                box-shadow: 5px 10px 8px #888888;
+                
+                &:hover + .listaLaboral {
+                    visibility: visible;
+                    box-shadow:none;
+                  
+                }
+            }
+    
+        }
+    
+        .civil{
+            justify-items: center;
+            
+            .listaCivil{
+                visibility: hidden;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.623);
+                width: 23vh;
+                border-radius: 0 0 10% 10%;
+                li{
+                    color:rgb(255, 255, 255);
+                    padding: 1vh .5vh;
+                    padding-right:2rem;
+                    margin: .5vh;
+                                   
+                }
+            }
+    
+            .botonCivil{
+                background-color: rgba(103, 245, 255, 0.514);
+                height:10vh;
+                width: 25vh;
+                padding: 1vh;
+                margin:5vh 5vh 0 5vh;
+                text-align: center;
+                align-content: center;
+                border-radius: .8vh;
+                border: .01vh solid black;
+                box-shadow: 5px 10px 8px #888888;
+                &:hover + .listaCivil {
+                    visibility: visible;      
+                }
+            }
+    
+        }
+    
+        .penal{
+            justify-items: center;
+            
+            .listaPenal{
+                visibility: hidden;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.623);
+                width: 23vh;
+                border-radius: 0 0 10% 10%;
+                li{
+                    color:rgb(255, 255, 255);
+                    padding: 1vh .5vh;
+                    padding-right:2rem;
+                    margin: .5vh;
+                                   
+                }
+            }
+    
+            .botonPenal{
+                background-color: rgba(103, 245, 255, 0.514);
+                height:10vh;
+                width: 25vh;
+                padding: 1vh;
+                margin:5vh 5vh 0 5vh;
+                text-align: center;
+                align-content: center;
+                border-radius: .8vh;
+                border: .01vh solid black;
+                box-shadow: 5px 10px 8px #888888;
+                &:hover + .listaPenal {
+                    visibility: visible;
+                }
+            }
+    
+        }
+    
+        .admin{
+            justify-items: center;
+            
+            .listaAdmin{
+            visibility: hidden;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.623);
+            width: 23vh;
+            border-radius: 0 0 10% 10%;
+            li{
+                color:rgb(255, 255, 255);
+                padding: 1vh .5vh;
+                padding-right:2rem;
+                margin: .5vh;
+                               
+            }
+            }
+    
+            .botonAdmin{
+                background-color: rgba(103, 245, 255, 0.514);
+                height:10vh;
+                width: 25vh;
+                margin:5vh 5vh 0 5vh;
+                text-align: center;
+                align-content: center;
+                border-radius: .8vh;
+                border: .01vh solid black;
+                box-shadow: 5px 10px 8px #888888;
+                &:hover + .listaAdmin {
+                visibility: visible;
+                }
+            }
+    
+        }
+    }
 }
 
 
@@ -82,68 +249,7 @@
 }
 
 
-.mainNosotros{
-        
-    .mainNosotros__section{
 
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,.1fr .1fr .1fr .1fr);
-        grid-template-areas: "titulo"
-        "texto"
-        "titulo1" 
-        "foto1"
-        "texto1" 
-        "titulo2"
-        "foto2"
-        "texto2" 
-        ;
-        overflow:visible;
-        text-align: justify;
-        justify-items: center;
-
-
-        h2{
-            grid-area: titulo;
-            text-align: center;
-            text-decoration: underline;
-            padding-top:12vh;
-        }            
-        
-        .equipo{
-            grid-area: texto;
-            padding: 7vh 8vh;
-            font-size: 2.5vh;
-        }
-
-        .eduardo{
-            grid-area:foto1;
-            height: 40vh;
-            width: auto;
-            margin-bottom:2vh;
-            border:1vh solid black;
-        }
-
-
-        .eduardotex{
-            grid-area:texto1;
-            padding:0 15vh 10vh 15vh;
-        }
-
-        .gaston{
-            grid-area:foto2;
-            height: 40vh;
-            width: auto;
-            margin-bottom:2vh;
-            border:1vh solid black;
-        }   
-        .gastontex{
-            grid-area:texto2;
-            padding:0 15vh 5vh 15vh;
-        }
-    }
-
-}
 
 
 

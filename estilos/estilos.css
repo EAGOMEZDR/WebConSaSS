@@ -36,7 +36,7 @@ header h4 {
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 h2, h3, h4, h5, h6 {
@@ -44,9 +44,20 @@ h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.link-navi {
+.cajas_fuero div ul li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.5vh;
+}
+
+#naviBar {
   font-size: 1.8vh;
   font-weight: bold;
+}
+
+.fuero {
+  font-family: 'Cinzel', serif;
+  font-size: 2vh;
 }
 
 /*INDEX*/
@@ -54,9 +65,191 @@ h2, h3, h4, h5, h6 {
 .mainServicios {
   background-color: rgba(0, 0, 0, 0.685);
   background-image: url(../imagenes/wallServicios.jpg);
-  background-size: cover;
+  background-size: auto;
   background-blend-mode: multiply;
-  padding-bottom: 30vh;
+}
+
+.mainServicios .mainServicios__section {
+  text-align: center;
+  text-justify: auto;
+}
+
+.mainServicios .mainServicios__section h2 {
+  padding: 2vh;
+  margin-bottom: 5vh;
+  margin-top: 10vh;
+  text-decoration: underline;
+}
+
+.mainServicios .mainServicios__section h5 {
+  margin: 0 8vh;
+  text-align: center;
+}
+
+.mainServicios .cajas_fuero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainServicios .cajas_fuero .laboral {
+  justify-items: center;
+}
+
+.mainServicios .cajas_fuero .laboral .listaLaboral {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.623);
+  width: 23vh;
+  border-radius: 0 0 10% 10%;
+}
+
+.mainServicios .cajas_fuero .laboral .listaLaboral li {
+  color: white;
+  padding: 1vh .5vh;
+  padding-right: 2rem;
+  margin: .5vh;
+}
+
+.mainServicios .cajas_fuero .laboral .botonLaboral {
+  background-color: rgba(103, 245, 255, 0.514);
+  height: 10vh;
+  width: 25vh;
+  padding: 1vh;
+  margin: 5vh 5vh 0 5vh;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: .8vh;
+  border: .2vh solid black;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+.mainServicios .cajas_fuero .laboral .botonLaboral:hover + .listaLaboral {
+  visibility: visible;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mainServicios .cajas_fuero .civil {
+  justify-items: center;
+}
+
+.mainServicios .cajas_fuero .civil .listaCivil {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.623);
+  width: 23vh;
+  border-radius: 0 0 10% 10%;
+}
+
+.mainServicios .cajas_fuero .civil .listaCivil li {
+  color: white;
+  padding: 1vh .5vh;
+  padding-right: 2rem;
+  margin: .5vh;
+}
+
+.mainServicios .cajas_fuero .civil .botonCivil {
+  background-color: rgba(103, 245, 255, 0.514);
+  height: 10vh;
+  width: 25vh;
+  padding: 1vh;
+  margin: 5vh 5vh 0 5vh;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: .8vh;
+  border: .01vh solid black;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+.mainServicios .cajas_fuero .civil .botonCivil:hover + .listaCivil {
+  visibility: visible;
+}
+
+.mainServicios .cajas_fuero .penal {
+  justify-items: center;
+}
+
+.mainServicios .cajas_fuero .penal .listaPenal {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.623);
+  width: 23vh;
+  border-radius: 0 0 10% 10%;
+}
+
+.mainServicios .cajas_fuero .penal .listaPenal li {
+  color: white;
+  padding: 1vh .5vh;
+  padding-right: 2rem;
+  margin: .5vh;
+}
+
+.mainServicios .cajas_fuero .penal .botonPenal {
+  background-color: rgba(103, 245, 255, 0.514);
+  height: 10vh;
+  width: 25vh;
+  padding: 1vh;
+  margin: 5vh 5vh 0 5vh;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: .8vh;
+  border: .01vh solid black;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+.mainServicios .cajas_fuero .penal .botonPenal:hover + .listaPenal {
+  visibility: visible;
+}
+
+.mainServicios .cajas_fuero .admin {
+  justify-items: center;
+}
+
+.mainServicios .cajas_fuero .admin .listaAdmin {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.623);
+  width: 23vh;
+  border-radius: 0 0 10% 10%;
+}
+
+.mainServicios .cajas_fuero .admin .listaAdmin li {
+  color: white;
+  padding: 1vh .5vh;
+  padding-right: 2rem;
+  margin: .5vh;
+}
+
+.mainServicios .cajas_fuero .admin .botonAdmin {
+  background-color: rgba(103, 245, 255, 0.514);
+  height: 10vh;
+  width: 25vh;
+  margin: 5vh 5vh 0 5vh;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: .8vh;
+  border: .01vh solid black;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+.mainServicios .cajas_fuero .admin .botonAdmin:hover + .listaAdmin {
+  visibility: visible;
 }
 
 /*NOSOTROS*/
@@ -65,70 +258,6 @@ h2, h3, h4, h5, h6 {
   background-image: url(../imagenes/martillo.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-}
-
-.mainNosotros .mainNosotros__section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (0.1fr 0.1fr 0.1fr 0.1fr)[2];
-      grid-template-rows: repeat(2, 0.1fr 0.1fr 0.1fr 0.1fr);
-      grid-template-areas: "titulo" "texto" "titulo1"  "foto1" "texto1"  "titulo2" "foto2" "texto2";
-  overflow: visible;
-  text-align: justify;
-  justify-items: center;
-}
-
-.mainNosotros .mainNosotros__section h2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: titulo;
-  text-align: center;
-  text-decoration: underline;
-  padding-top: 12vh;
-}
-
-.mainNosotros .mainNosotros__section .equipo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: texto;
-  padding: 7vh 8vh;
-  font-size: 2.5vh;
-}
-
-.mainNosotros .mainNosotros__section .eduardo {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: foto1;
-  height: 40vh;
-  width: auto;
-  margin-bottom: 2vh;
-  border: 1vh solid black;
-}
-
-.mainNosotros .mainNosotros__section .eduardotex {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: texto1;
-  padding: 0 15vh 10vh 15vh;
-}
-
-.mainNosotros .mainNosotros__section .gaston {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: foto2;
-  height: 40vh;
-  width: auto;
-  margin-bottom: 2vh;
-  border: 1vh solid black;
-}
-
-.mainNosotros .mainNosotros__section .gastontex {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: texto2;
-  padding: 0 15vh 5vh 15vh;
 }
 
 .mainNosotros .mainNosotros__section {
@@ -291,7 +420,7 @@ body .sombra2 {
   width: 52vh;
   position: fixed;
   top: 0vh;
-  left: 45vh;
+  left: 47vh;
   background-color: rgba(0, 0, 0, 0.74);
   border-radius: 0 0 3% 0;
   z-index: 200;
@@ -353,7 +482,7 @@ header .navbar {
 }
 
 main {
-  padding-top: 23vh;
+  padding-top: 10vh;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
@@ -523,6 +652,110 @@ title {
     width: 45vh;
     height: 30vh;
   }
+  .mainServicios .cajas_fuero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainServicios .cajas_fuero .laboral {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .laboral .listaLaboral {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .laboral .botonLaboral {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .civil {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .civil .listaCivil {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .civil .botonCivil {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .penal {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .penal .listaPenal {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .penal .botonPenal {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .admin {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .admin .listaAdmin {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .admin .botonAdmin {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   footer p {
     font-size: 3vh;
     padding: 3vh 0;
@@ -618,6 +851,110 @@ title {
   .mainLinks__div iframe {
     width: 60vh;
     height: 35vh;
+  }
+  .mainServicios .cajas_fuero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainServicios .cajas_fuero .laboral {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .laboral .listaLaboral {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .laboral .botonLaboral {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .civil {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .civil .listaCivil {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .civil .botonCivil {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .penal {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .penal .listaPenal {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .penal .botonPenal {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainServicios .cajas_fuero .admin {
+    justify-items: center;
+  }
+  .mainServicios .cajas_fuero .admin .listaAdmin {
+    background-color: rgba(70, 70, 70, 0.432);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainServicios .cajas_fuero .admin .botonAdmin {
+    background-color: rgba(103, 245, 255, 0.514);
+    width: 50vh;
+    margin: 5vh 5vh 0 5vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   footer p {
     font-size: 3vh;
@@ -867,88 +1204,5 @@ title {
     height: 8vh;
     width: auto;
   }
-}
-
-.cajas_fuero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.cajas_fuero .laboral {
-  justify-items: center;
-}
-
-.cajas_fuero .laboral .listaLaboral {
-  text-align: center;
-  background-color: antiquewhite;
-  width: 45vh;
-}
-
-.cajas_fuero .laboral .botonLaboral {
-  background-color: #51b9ff;
-  height: 10vh;
-  width: 45vh;
-  padding: 1vh;
-  margin: 5vh 5vh 0 5vh;
-  text-align: center;
-}
-
-.cajas_fuero .laboral .botonLaboral:hover + .listaLaboral {
-  display: block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.cajas_fuero .civil .listaCivil {
-  display: none;
-}
-
-.cajas_fuero .civil .botonCivil {
-  background-color: #51b9ff;
-  height: 10vh;
-  width: 30vh;
-  padding: 1vh;
-}
-
-.cajas_fuero .civil .botonCivil:hover + .listaCivil {
-  display: block;
-}
-
-.cajas_fuero .penal .listaPenal {
-  display: none;
-}
-
-.cajas_fuero .penal .botonPenal {
-  background-color: #51b9ff;
-  height: 10vh;
-  width: 30vh;
-  padding: 1vh;
-}
-
-.cajas_fuero .penal .botonPenal:hover + .listaPenal {
-  display: block;
-}
-
-.cajas_fuero .admin .listaAdmin {
-  display: none;
-}
-
-.cajas_fuero .admin .botonAdmin {
-  background-color: #51b9ff;
-  height: 10vh;
-  width: 30vh;
-  padding: 1vh;
-}
-
-.cajas_fuero .admin .botonAdmin:hover + .listaAdmin {
-  display: block;
 }
 /*# sourceMappingURL=estilos.css.map */

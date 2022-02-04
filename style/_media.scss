@@ -100,6 +100,95 @@
         }
     }
 
+    .mainServicios{
+        .cajas_fuero{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .laboral{
+                justify-items: center;
+                 
+                .listaLaboral{
+                    background-color: rgba(70, 70, 70, 0.432);
+                    justify-content: space-evenly;
+                    width: auto;
+                    flex-wrap: wrap;
+                    visibility: visible;
+                    display: flex;
+                
+                }
+                .botonLaboral{
+                    background-color: rgba(103, 245, 255, 0.514);
+                    width: 50vh;
+                    margin:5vh 5vh 0 5vh;
+                    box-shadow: none;
+                    
+                }
+           }
+                .civil{
+                    justify-items: center;
+                    
+                    .listaCivil{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonCivil{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+            }
+                .penal{
+                    justify-items: center;
+                    
+                    .listaPenal{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonPenal{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+                }
+                .admin{
+                    justify-items: center;
+                    
+                    .listaAdmin{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonAdmin{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+                }
+        }  
+    }
+
+
 
     footer{
         p{
@@ -214,6 +303,95 @@
         }
     }
 
+    .mainServicios{
+        .cajas_fuero{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .laboral{
+                justify-items: center;
+                 
+                .listaLaboral{
+                    background-color: rgba(70, 70, 70, 0.432);
+                    justify-content: space-evenly;
+                    width: auto;
+                    flex-wrap: wrap;
+                    visibility: visible;
+                    display: flex;
+                
+                }
+                .botonLaboral{
+                    background-color: rgba(103, 245, 255, 0.514);
+                    width: 50vh;
+                    margin:5vh 5vh 0 5vh;
+                    box-shadow: none;
+                    
+                }
+           }
+                .civil{
+                    justify-items: center;
+                    
+                    .listaCivil{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonCivil{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+            }
+                .penal{
+                    justify-items: center;
+                    
+                    .listaPenal{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonPenal{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+                }
+                .admin{
+                    justify-items: center;
+                    
+                    .listaAdmin{
+                        background-color: rgba(70, 70, 70, 0.432);
+                        justify-content: space-evenly;
+                        width: auto;
+                        flex-wrap: wrap;
+                        visibility: visible;
+                        display: flex;
+                    
+                    }
+                    .botonAdmin{
+                        background-color: rgba(103, 245, 255, 0.514);
+                        width: 50vh;
+                        margin:5vh 5vh 0 5vh;
+                        box-shadow: none;
+                        
+                    }
+                }
+        }  
+    }
+
+    
     footer{
         p{
             font-size: 3vh;
@@ -483,5 +661,6 @@
 
     }
 
+
 }
-   
+
