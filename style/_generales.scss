@@ -21,8 +21,41 @@ header{
     grid-area: head;
     background-color: rgba(0, 0, 0, 0.918);
 
+    .barra-datos{
+        display: flex;
+        position: absolute;
+        top:0;
+        left:0;
+        justify-items: center;
+
+        .whatsapp{
+            height: 1.5vh;
+            width: auto;
+            margin: .6vh auto auto .8vh;
+        }
+
+        .whatsappN{
+            font-size: 1.4vh;
+            margin:.15vh .5vh .5vh .2vh;
+        }
+        .mail{
+            height:1.6vh;
+            width: auto;
+            margin:.48vh .15vh .5vh 1vh;
+        }
+
+        .mailN{
+            font-size: 1.4vh;
+            margin:.15vh .5vh .5vh .5vh;
+        }
+    }
+
     nav{
         z-index: 5000;
+    }
+    .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
     }
 }
 .container-fluid{

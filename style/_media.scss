@@ -190,7 +190,7 @@
         padding-top:20vh;
     }
     .mainIndex{
-
+        padding-top:20vh;
         section{
             
             .contenedor_palacio{
@@ -431,7 +431,11 @@
         top:0;
         z-index: 200;
         opacity: 80%;
-        margin: 2vh auto 0 auto;
+        margin: 0 auto 0 auto;
+
+        nav{
+            margin-top: 2vh;
+        }
     }
 
     .mainIndex{
@@ -467,7 +471,7 @@
                 .cuadrado1,.cuadrado2,.cuadrado3{
                     justify-content:space-around;
                     height: 23vh;
-                    width: 35vh;
+                    width: 50vh;
                     padding:1vh;
                     margin:auto;
                     background-color:rgba(0, 0, 0, 0.603);

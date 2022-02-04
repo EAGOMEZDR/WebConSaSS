@@ -152,8 +152,45 @@ header {
   background-color: rgba(0, 0, 0, 0.918);
 }
 
+header .barra-datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-items: center;
+}
+
+header .barra-datos .whatsapp {
+  height: 1.5vh;
+  width: auto;
+  margin: .6vh auto auto .8vh;
+}
+
+header .barra-datos .whatsappN {
+  font-size: 1.4vh;
+  margin: .15vh .5vh .5vh .2vh;
+}
+
+header .barra-datos .mail {
+  height: 1.6vh;
+  width: auto;
+  margin: .48vh .15vh .5vh 1vh;
+}
+
+header .barra-datos .mailN {
+  font-size: 1.4vh;
+  margin: .15vh .5vh .5vh .5vh;
+}
+
 header nav {
   z-index: 5000;
+}
+
+header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .container-fluid {
@@ -413,6 +450,9 @@ title {
   main {
     padding-top: 20vh;
   }
+  .mainIndex {
+    padding-top: 20vh;
+  }
   .mainIndex section .contenedor_palacio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,7 +667,10 @@ title {
     top: 0;
     z-index: 200;
     opacity: 80%;
-    margin: 2vh auto 0 auto;
+    margin: 0 auto 0 auto;
+  }
+  header nav {
+    margin-top: 2vh;
   }
   .mainIndex section .contenedor_palacio {
     display: -webkit-box;
@@ -664,7 +707,7 @@ title {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 23vh;
-    width: 35vh;
+    width: 50vh;
     padding: 1vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.603);
