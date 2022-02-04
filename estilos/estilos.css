@@ -45,7 +45,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .link-navi {
-  font-size: 1.9vh;
+  font-size: 1.8vh;
+  font-weight: bold;
 }
 
 /*INDEX*/
@@ -63,6 +64,134 @@ h2, h3, h4, h5, h6 {
   background-image: url(../imagenes/martillo.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+}
+
+.mainNosotros .mainNosotros__section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (0.1fr 0.1fr 0.1fr 0.1fr)[2];
+      grid-template-rows: repeat(2, 0.1fr 0.1fr 0.1fr 0.1fr);
+      grid-template-areas: "titulo" "texto" "titulo1"  "foto1" "texto1"  "titulo2" "foto2" "texto2";
+  overflow: visible;
+  text-align: justify;
+  justify-items: center;
+}
+
+.mainNosotros .mainNosotros__section h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 12vh;
+}
+
+.mainNosotros .mainNosotros__section .equipo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: texto;
+  padding: 7vh 8vh;
+  font-size: 2.5vh;
+}
+
+.mainNosotros .mainNosotros__section .eduardo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+  height: 40vh;
+  width: auto;
+  margin-bottom: 2vh;
+  border: 1vh solid black;
+}
+
+.mainNosotros .mainNosotros__section .eduardotex {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: texto1;
+  padding: 0 15vh 10vh 15vh;
+}
+
+.mainNosotros .mainNosotros__section .gaston {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: foto2;
+  height: 40vh;
+  width: auto;
+  margin-bottom: 2vh;
+  border: 1vh solid black;
+}
+
+.mainNosotros .mainNosotros__section .gastontex {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: texto2;
+  padding: 0 15vh 5vh 15vh;
+}
+
+.mainNosotros .mainNosotros__section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (0.1fr 0.1fr 0.1fr 0.1fr)[2];
+      grid-template-rows: repeat(2, 0.1fr 0.1fr 0.1fr 0.1fr);
+      grid-template-areas: "titulo" "texto" "titulo1"  "foto1" "texto1"  "titulo2" "foto2" "texto2";
+  overflow: visible;
+  text-align: justify;
+  justify-items: center;
+}
+
+.mainNosotros .mainNosotros__section h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 12vh;
+}
+
+.mainNosotros .mainNosotros__section .equipo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: texto;
+  padding: 7vh 8vh;
+  font-size: 2.5vh;
+}
+
+.mainNosotros .mainNosotros__section .eduardo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+  height: 40vh;
+  width: auto;
+  margin-bottom: 2vh;
+  border: 1vh solid black;
+}
+
+.mainNosotros .mainNosotros__section .eduardotex {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: texto1;
+  padding: 0 15vh 10vh 15vh;
+}
+
+.mainNosotros .mainNosotros__section .gaston {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: foto2;
+  height: 40vh;
+  width: auto;
+  margin-bottom: 2vh;
+  border: 1vh solid black;
+}
+
+.mainNosotros .mainNosotros__section .gastontex {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: texto2;
+  padding: 0 15vh 5vh 15vh;
 }
 
 /*CONTACTENOS*/
@@ -145,11 +274,36 @@ body {
       grid-template-areas: "head" "main" "foot";
 }
 
+body .sombra {
+  height: 17vh;
+  width: 47vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.74);
+  border-radius: 0 0 3% 0;
+  z-index: 200;
+}
+
+body .sombra2 {
+  height: 12vh;
+  width: 52vh;
+  position: fixed;
+  top: 0vh;
+  left: 45vh;
+  background-color: rgba(0, 0, 0, 0.74);
+  border-radius: 0 0 3% 0;
+  z-index: 200;
+}
+
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: head;
-  background-color: rgba(0, 0, 0, 0.918);
+}
+
+header .navbar2 {
+  margin-top: 2vh;
 }
 
 header .barra-datos {
@@ -214,12 +368,12 @@ main .botonRed {
 }
 
 main .offcanvas {
-  opacity: 89%;
+  opacity: 90%;
 }
 
 main .offcanvas .offcanvas-header {
   background-color: black;
-  opacity: 100%;
+  opacity: 80%;
 }
 
 main .offcanvas .offcanvas-body {
@@ -284,18 +438,23 @@ title {
 
 /*MOBILE*/
 @media (max-width: 500px) {
+  body .sombra {
+    width: 100%;
+  }
+  body .sombra2 {
+    display: none;
+  }
   header {
     position: fixed;
     top: 0;
     z-index: 500;
-    opacity: 98%;
     margin: 0;
   }
   .navbar-toggler {
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: .3vh;
+    margin-right: 3vh;
     margin-top: 5vh;
     background-color: black;
     border: 1vh solid black;
@@ -370,71 +529,19 @@ title {
   #offcanvasExample {
     z-index: 6000;
   }
-  .mainNosotros .mainNosotros__section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (0.1fr 0.1fr 0.1fr 0.1fr)[2];
-        grid-template-rows: repeat(2, 0.1fr 0.1fr 0.1fr 0.1fr);
-        grid-template-areas: "titulo" "texto" "titulo1"  "foto1" "texto1"  "titulo2" "foto2" "texto2";
-    overflow: visible;
-    text-align: justify;
-    justify-items: center;
-  }
-  .mainNosotros .mainNosotros__section h2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: titulo;
-    text-align: center;
-    text-decoration: underline;
-    padding-top: 12vh;
-  }
-  .mainNosotros .mainNosotros__section .equipo {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: texto;
-    padding: 5vh 6vh;
-    font-size: 2.5vh;
-  }
-  .mainNosotros .mainNosotros__section .eduardo {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: foto1;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
-  }
-  .mainNosotros .mainNosotros__section .eduardotex {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-area: texto1;
-    padding: 0 10vh 10vh 10vh;
-  }
-  .mainNosotros .mainNosotros__section .gaston {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    grid-area: foto2;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
-  }
-  .mainNosotros .mainNosotros__section .gastontex {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-    grid-area: texto2;
-    padding: 0 12vh;
-  }
 }
 
-@media (min-width: 501px) and (max-width: 810px) {
+@media (min-width: 501px) and (max-width: 990px) {
+  body .sombra {
+    width: 100%;
+  }
+  body .sombra2 {
+    display: none;
+  }
   header {
     position: fixed;
     top: 0;
     z-index: 500;
-    opacity: 98%;
     margin: 0;
   }
   .navbar-toggler {
@@ -507,63 +614,6 @@ title {
         align-self: center;
     text-align: justify;
   }
-  .mainNosotros .mainNosotros__section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (0.1fr 0.1fr 0.1fr 0.1fr)[2];
-        grid-template-rows: repeat(2, 0.1fr 0.1fr 0.1fr 0.1fr);
-        grid-template-areas: "titulo" "texto" "titulo1"  "foto1" "texto1"  "titulo2" "foto2" "texto2";
-    overflow: visible;
-    text-align: justify;
-    justify-items: center;
-  }
-  .mainNosotros .mainNosotros__section h2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: titulo;
-    text-align: center;
-    text-decoration: underline;
-    padding-top: 12vh;
-  }
-  .mainNosotros .mainNosotros__section .equipo {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: texto;
-    padding: 7vh 8vh;
-    font-size: 2.5vh;
-  }
-  .mainNosotros .mainNosotros__section .eduardo {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: foto1;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
-  }
-  .mainNosotros .mainNosotros__section .eduardotex {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-area: texto1;
-    padding: 0 15vh 10vh 15vh;
-  }
-  .mainNosotros .mainNosotros__section .gaston {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    grid-area: foto2;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
-  }
-  .mainNosotros .mainNosotros__section .gastontex {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-    grid-area: texto2;
-    padding: 0 15vh 5vh 15vh;
-  }
   .mainLinks__div iframe {
     width: 60vh;
     height: 35vh;
@@ -577,12 +627,11 @@ title {
   }
 }
 
-@media (min-width: 811px) and (max-width: 1280px) {
+@media (min-width: 991px) and (max-width: 1280px) {
   header {
     position: fixed;
     top: 0;
     z-index: 5000;
-    opacity: 95%;
     margin: 0;
   }
   .navbar-toggler {
@@ -666,11 +715,7 @@ title {
     position: fixed;
     top: 0;
     z-index: 200;
-    opacity: 80%;
     margin: 0 auto 0 auto;
-  }
-  header nav {
-    margin-top: 2vh;
   }
   .mainIndex section .contenedor_palacio {
     display: -webkit-box;
@@ -730,9 +775,9 @@ title {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: .3fr 1fr .5fr;
-        grid-template-rows: .3fr 1fr .5fr;
-        grid-template-areas: "titulo titulo titulo" "foto1 texto foto2" "texto1 texto texto2";
+    -ms-grid-rows: .3fr .1fr 1fr .5fr;
+        grid-template-rows: .3fr .1fr 1fr .5fr;
+        grid-template-areas: "titulo titulo titulo" "titulo1 texto titulo2" "foto1 texto foto2" "texto1 texto texto2";
     overflow: visible;
     text-align: justify;
     justify-items: center;
@@ -747,7 +792,7 @@ title {
     padding-top: 12vh;
   }
   .mainNosotros .mainNosotros__section .eduardo {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: foto1;
     height: 40vh;
@@ -757,14 +802,14 @@ title {
   }
   .mainNosotros .mainNosotros__section .equipo {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 2;
     grid-area: texto;
-    padding: 5vh 15vh;
+    padding: 5vh 5vh;
     font-size: 2.5vh;
   }
   .mainNosotros .mainNosotros__section .gaston {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 3;
     grid-area: foto2;
     height: 40vh;
@@ -773,13 +818,13 @@ title {
     border: 1vh solid black;
   }
   .mainNosotros .mainNosotros__section .eduardotex {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: texto1;
-    padding: 0 15vh;
+    padding: 0 13.6vh;
   }
   .mainNosotros .mainNosotros__section .gastontex {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 3;
     grid-area: texto2;
     padding: 0 15vh;

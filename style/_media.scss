@@ -1,19 +1,29 @@
 /*MOBILE*/
 
 @media (max-width:500px){
+
+    body{
+        .sombra{
+            width:100%;
+        }
+        .sombra2{
+            display: none;
+        }
+    }
+
     header{
         position:fixed;
         top:0;
         z-index: 500;
-        opacity: 98%;
         margin: 0;
+
     }
 
     .navbar-toggler{
         position:fixed;
         top:0;
         right:0;
-        margin-right:.3vh;
+        margin-right:3vh;
         margin-top:5vh;
         background-color: rgb(0, 0, 0);
         border: 1vh solid black;
@@ -101,76 +111,25 @@
         z-index: 6000;
     }
 
-    .mainNosotros{
-        
-        .mainNosotros__section{
-    
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2,.1fr .1fr .1fr .1fr);
-            grid-template-areas: "titulo"
-            "texto"
-            "titulo1" 
-            "foto1"
-            "texto1" 
-            "titulo2"
-            "foto2"
-            "texto2" 
-            ;
-            overflow:visible;
-            text-align: justify;
-            justify-items: center;
 
     
-            h2{
-                grid-area: titulo;
-                text-align: center;
-                text-decoration: underline;
-                padding-top:12vh;
-            }            
-            
-            .equipo{
-                grid-area: texto;
-                padding: 5vh 6vh;
-                font-size: 2.5vh;
-            }
-    
-            .eduardo{
-                grid-area:foto1;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
-            }
-    
-   
-            .eduardotex{
-                grid-area:texto1;
-                padding:0 10vh 10vh 10vh;
-            }
 
-            .gaston{
-                grid-area:foto2;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
-            }   
-            .gastontex{
-                grid-area:texto2;
-                padding:0 12vh;
-            }
-        }
-    
-    }
 }
 
-@media (min-width:501px) and (max-width:810px){
+@media (min-width:501px) and (max-width:990px){
+    body{
+        .sombra{
+            width:100%;
+        }
+        .sombra2{
+            display: none;
+        }
+    }
+    
     header{
         position:fixed;
         top:0;
         z-index: 500;
-        opacity: 98%;
         margin: 0;
     }
 
@@ -247,68 +206,6 @@
     
     } 
 
-    .mainNosotros{
-        
-        .mainNosotros__section{
-    
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2,.1fr .1fr .1fr .1fr);
-            grid-template-areas: "titulo"
-            "texto"
-            "titulo1" 
-            "foto1"
-            "texto1" 
-            "titulo2"
-            "foto2"
-            "texto2" 
-            ;
-            overflow:visible;
-            text-align: justify;
-            justify-items: center;
-
-    
-            h2{
-                grid-area: titulo;
-                text-align: center;
-                text-decoration: underline;
-                padding-top:12vh;
-            }            
-            
-            .equipo{
-                grid-area: texto;
-                padding: 7vh 8vh;
-                font-size: 2.5vh;
-            }
-    
-            .eduardo{
-                grid-area:foto1;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
-            }
-    
-   
-            .eduardotex{
-                grid-area:texto1;
-                padding:0 15vh 10vh 15vh;
-            }
-
-            .gaston{
-                grid-area:foto2;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
-            }   
-            .gastontex{
-                grid-area:texto2;
-                padding:0 15vh 5vh 15vh;
-            }
-        }
-    
-    }
 
     .mainLinks__div{
         iframe{
@@ -329,13 +226,12 @@
 
 }
 
-@media (min-width:811px) and (max-width:1280px){
-    
+@media (min-width:991px) and (max-width:1280px){
+
     header{
         position:fixed;
         top:0;
         z-index: 5000;
-        opacity: 95%;
         margin: 0;
     }
 
@@ -430,12 +326,8 @@
         position:fixed;
         top:0;
         z-index: 200;
-        opacity: 80%;
         margin: 0 auto 0 auto;
 
-        nav{
-            margin-top: 2vh;
-        }
     }
 
     .mainIndex{
@@ -503,8 +395,9 @@
     
             display:grid;
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: .3fr 1fr .5fr;
+            grid-template-rows: .3fr .1fr 1fr .5fr;
             grid-template-areas: "titulo titulo titulo"
+            "titulo1 texto titulo2"
             "foto1 texto foto2"
             "texto1 texto texto2";
             overflow:visible;
@@ -527,7 +420,7 @@
             }
             .equipo{
                 grid-area: texto;
-                padding: 5vh 15vh;
+                padding: 5vh 5vh;
                 font-size: 2.5vh;
             }
     
@@ -541,7 +434,7 @@
     
             .eduardotex{
                 grid-area:texto1;
-                padding:0 15vh;
+                padding:0 13.6vh;
             }
     
             .gastontex{

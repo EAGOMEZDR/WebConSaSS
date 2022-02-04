@@ -14,12 +14,42 @@ body{
     "head"
     "main"
     "foot";
+
+    .sombra{
+        height:17vh;
+        width: 47vh;
+        position:fixed;
+        top:0;
+        left:0;    
+        background-color: rgba(0, 0, 0, 0.74);
+        border-radius: 0 0 3% 0;
+        z-index: 200;
+    }
+
+    .sombra2{
+        height:12vh;
+        width: 52vh;
+        position:fixed;
+        top:0vh;
+        left:45vh;    
+        background-color: rgba(0, 0, 0, 0.74);
+        border-radius: 0 0 3% 0;
+        z-index: 200;
+    }
     
 }
 
 header{
     grid-area: head;
-    background-color: rgba(0, 0, 0, 0.918);
+  
+    .navbar2{
+        margin-top: 2vh;
+        
+
+
+
+        
+    }
 
     .barra-datos{
         display: flex;
@@ -77,10 +107,10 @@ main{
         }
 
         .offcanvas{
-            opacity: 89%;
+            opacity: 90%;
             .offcanvas-header{
                 background-color: rgb(0, 0, 0);
-                opacity:100%;
+                opacity:80%;
                 
             }
             .offcanvas-body{

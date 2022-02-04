@@ -18,7 +18,132 @@
     background-image:url(../imagenes/martillo.jpg);
     background-size: cover;
     background-blend-mode: multiply;
+
+    .mainNosotros__section{
+
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,.1fr .1fr .1fr .1fr);
+        grid-template-areas: "titulo"
+        "texto"
+        "titulo1" 
+        "foto1"
+        "texto1" 
+        "titulo2"
+        "foto2"
+        "texto2" 
+        ;
+        overflow:visible;
+        text-align: justify;
+        justify-items: center;
+
+
+        h2{
+            grid-area: titulo;
+            text-align: center;
+            text-decoration: underline;
+            padding-top:12vh;
+        }            
+        
+        .equipo{
+            grid-area: texto;
+            padding: 7vh 8vh;
+            font-size: 2.5vh;
+        }
+
+        .eduardo{
+            grid-area:foto1;
+            height: 40vh;
+            width: auto;
+            margin-bottom:2vh;
+            border:1vh solid black;
+        }
+
+
+        .eduardotex{
+            grid-area:texto1;
+            padding:0 15vh 10vh 15vh;
+        }
+
+        .gaston{
+            grid-area:foto2;
+            height: 40vh;
+            width: auto;
+            margin-bottom:2vh;
+            border:1vh solid black;
+        }   
+        .gastontex{
+            grid-area:texto2;
+            padding:0 15vh 5vh 15vh;
+        }
+    }
+
 }
+
+
+.mainNosotros{
+        
+    .mainNosotros__section{
+
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,.1fr .1fr .1fr .1fr);
+        grid-template-areas: "titulo"
+        "texto"
+        "titulo1" 
+        "foto1"
+        "texto1" 
+        "titulo2"
+        "foto2"
+        "texto2" 
+        ;
+        overflow:visible;
+        text-align: justify;
+        justify-items: center;
+
+
+        h2{
+            grid-area: titulo;
+            text-align: center;
+            text-decoration: underline;
+            padding-top:12vh;
+        }            
+        
+        .equipo{
+            grid-area: texto;
+            padding: 7vh 8vh;
+            font-size: 2.5vh;
+        }
+
+        .eduardo{
+            grid-area:foto1;
+            height: 40vh;
+            width: auto;
+            margin-bottom:2vh;
+            border:1vh solid black;
+        }
+
+
+        .eduardotex{
+            grid-area:texto1;
+            padding:0 15vh 10vh 15vh;
+        }
+
+        .gaston{
+            grid-area:foto2;
+            height: 40vh;
+            width: auto;
+            margin-bottom:2vh;
+            border:1vh solid black;
+        }   
+        .gastontex{
+            grid-area:texto2;
+            padding:0 15vh 5vh 15vh;
+        }
+    }
+
+}
+
 
 
 
