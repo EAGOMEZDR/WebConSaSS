@@ -17,7 +17,7 @@ body{
 
     .sombra{
         height:17vh;
-        width: 47vh;
+        width: 100%;
         position:fixed;
         top:0;
         left:0;    
@@ -26,16 +26,6 @@ body{
         z-index: 200;
     }
 
-    .sombra2{
-        height:12vh;
-        width: 52vh;
-        position:fixed;
-        top:0vh;
-        left:47vh;    
-        background-color: rgba(0, 0, 0, 0.74);
-        border-radius: 0 0 3% 0;
-        z-index: 200;
-    }
     
 }
 
