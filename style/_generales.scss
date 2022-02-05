@@ -16,7 +16,7 @@ body{
     "foot";
 
     .sombra{
-        height:17vh;
+        height:18.7vh;
         width: 100%;
         position:fixed;
         top:0;
@@ -27,6 +27,10 @@ body{
     }
 
     
+}
+
+.navbar-estudio{
+    z-index: 1300;
 }
 
 header{
@@ -138,12 +142,14 @@ footer{
         }
         ul{
             display: inline-flex;
-            justify-content: space-evenly;
+            justify-self: center;
             
             li{
                 padding:1vh;
                 margin:1vh;
                 a{
+                    padding: 0 1vh;
+                    margin: 0 1vh;
                     img{
                         height:5vh;
                         width:5vh;

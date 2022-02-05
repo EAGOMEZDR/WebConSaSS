@@ -31,6 +31,11 @@
         
     }
 
+    #navbar-estudio{
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.74);
+    }
+
     main{
         padding-top:20vh;
     }
@@ -114,8 +119,7 @@
                     width: auto;
                     flex-wrap: wrap;
                     visibility: visible;
-                    display: flex;
-                
+                    display: flex;                
                 }
                 .botonLaboral{
                     background-color: rgba(103, 245, 255, 0.514);
@@ -232,6 +236,11 @@
         border: 1vh solid black;
         border-radius: 3%;
         
+    }
+
+    #navbar-estudio{
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.74);
     }
 
     main{

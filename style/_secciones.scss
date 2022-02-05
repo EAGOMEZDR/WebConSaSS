@@ -5,7 +5,7 @@
 /*SERVICIOS*/
 .mainServicios{
     background-color: rgba(0, 0, 0, 0.685);
-    background-image:url(../imagenes/wallServicios.jpg);
+    background-image:url(../imagenes/wallServicios.png);
     background-size:auto;
     background-blend-mode: multiply;
 
@@ -30,6 +30,7 @@
         justify-content: space-evenly;
         
         
+        
         .laboral{
             justify-items: center;
              
@@ -39,6 +40,7 @@
             background-color: rgba(0, 0, 0, 0.623);
             width: 23vh;
             border-radius: 0 0 10% 10%;
+            box-shadow: 7px 10px 12px #888888;
                 li{
                     color:rgb(255, 255, 255);
                     padding: 1vh .5vh;
@@ -49,7 +51,7 @@
             }
     
             .botonLaboral{
-                background-color: rgba(103, 245, 255, 0.514);
+                background-color: rgba(0, 0, 0, 0.562);
                 height:10vh;
                 width: 25vh;
                 padding: 1vh;
@@ -57,13 +59,11 @@
                 text-align: center;
                 align-content: center;
                 border-radius: .8vh;
-                border: .2vh solid black;
-                box-shadow: 5px 10px 8px #888888;
+                border: .2vh solid rgb(153, 153, 153);
+                box-shadow: 15px 0px 12px #888888;
                 
                 &:hover + .listaLaboral {
-                    visibility: visible;
-                    box-shadow:none;
-                  
+                    visibility: visible;                  
                 }
             }
     
@@ -78,6 +78,7 @@
                 background-color: rgba(0, 0, 0, 0.623);
                 width: 23vh;
                 border-radius: 0 0 10% 10%;
+                box-shadow: 7px 10px 12px #888888;
                 li{
                     color:rgb(255, 255, 255);
                     padding: 1vh .5vh;
@@ -88,7 +89,7 @@
             }
     
             .botonCivil{
-                background-color: rgba(103, 245, 255, 0.514);
+                background-color: rgba(0, 0, 0, 0.562);
                 height:10vh;
                 width: 25vh;
                 padding: 1vh;
@@ -96,10 +97,10 @@
                 text-align: center;
                 align-content: center;
                 border-radius: .8vh;
-                border: .01vh solid black;
-                box-shadow: 5px 10px 8px #888888;
+                border: .2vh solid rgb(153, 153, 153);
+                box-shadow: 15px 0px 12px #888888;
                 &:hover + .listaCivil {
-                    visibility: visible;      
+                    visibility: visible; 
                 }
             }
     
@@ -114,6 +115,7 @@
                 background-color: rgba(0, 0, 0, 0.623);
                 width: 23vh;
                 border-radius: 0 0 10% 10%;
+                box-shadow: 7px 10px 12px #888888;
                 li{
                     color:rgb(255, 255, 255);
                     padding: 1vh .5vh;
@@ -124,7 +126,7 @@
             }
     
             .botonPenal{
-                background-color: rgba(103, 245, 255, 0.514);
+                background-color: rgba(0, 0, 0, 0.562);
                 height:10vh;
                 width: 25vh;
                 padding: 1vh;
@@ -132,8 +134,8 @@
                 text-align: center;
                 align-content: center;
                 border-radius: .8vh;
-                border: .01vh solid black;
-                box-shadow: 5px 10px 8px #888888;
+                border: .2vh solid rgb(153, 153, 153);
+                box-shadow: 15px 0px 12px #888888;
                 &:hover + .listaPenal {
                     visibility: visible;
                 }
@@ -150,6 +152,7 @@
             background-color: rgba(0, 0, 0, 0.623);
             width: 23vh;
             border-radius: 0 0 10% 10%;
+            box-shadow: 7px 10px 12px #888888;
             li{
                 color:rgb(255, 255, 255);
                 padding: 1vh .5vh;
@@ -160,15 +163,15 @@
             }
     
             .botonAdmin{
-                background-color: rgba(103, 245, 255, 0.514);
+                background-color: rgba(0, 0, 0, 0.562);
                 height:10vh;
                 width: 25vh;
                 margin:5vh 5vh 0 5vh;
                 text-align: center;
                 align-content: center;
                 border-radius: .8vh;
-                border: .01vh solid black;
-                box-shadow: 5px 10px 8px #888888;
+                border: .2vh solid rgb(153, 153, 153);
+                box-shadow: 15px 0px 12px #888888;
                 &:hover + .listaAdmin {
                 visibility: visible;
                 }
@@ -210,7 +213,7 @@
             grid-area: titulo;
             text-align: center;
             text-decoration: underline;
-            padding-top:12vh;
+            padding-top:14vh;
         }            
         
         .equipo{
@@ -263,9 +266,11 @@
     background-blend-mode: multiply;
     padding-right:4vh;
     padding-left:3vh;
+    padding-top:25vh;
     h2{
         text-decoration: underline;
-        padding: 2vh 0;
+        padding: 1vh 0;
+        text-align: center;
     }
 }
 .form-black{
@@ -280,6 +285,7 @@
     background-image:url(../imagenes/wallLinks.jpg);
     background-size: cover;
     background-blend-mode: multiply;
+    padding-top:17vh;
     
     section{
         padding:2vh;
