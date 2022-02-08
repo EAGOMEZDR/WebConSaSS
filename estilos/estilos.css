@@ -65,6 +65,13 @@ h2, h3, h4, h5, h6 {
   font-size: 2vh;
 }
 
+.fotos, .mainNosotros .mainNosotros__section .eduardo, .mainNosotros .mainNosotros__section .gaston {
+  height: 40vh;
+  width: auto;
+  margin-bottom: 2vh;
+  border: 1vh solid black;
+}
+
 /*INDEX*/
 /*SERVICIOS*/
 .mainServicios {
@@ -305,10 +312,8 @@ h2, h3, h4, h5, h6 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: foto1;
-  height: 40vh;
-  width: auto;
-  margin-bottom: 2vh;
-  border: 1vh solid black;
+  -webkit-box-shadow: -.7vh .7vh 12px gray;
+          box-shadow: -.7vh .7vh 12px gray;
 }
 
 .mainNosotros .mainNosotros__section .eduardotex {
@@ -322,10 +327,8 @@ h2, h3, h4, h5, h6 {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: foto2;
-  height: 40vh;
-  width: auto;
-  margin-bottom: 2vh;
-  border: 1vh solid black;
+  -webkit-box-shadow: .7vh .7vh 12px gray;
+          box-shadow: .7vh .7vh 12px gray;
 }
 
 .mainNosotros .mainNosotros__section .gastontex {
@@ -568,8 +571,8 @@ footer .redesSociales ul li a {
 }
 
 footer .redesSociales ul li a img {
-  height: 5vh;
   width: 5vh;
+  height: 5vh;
 }
 
 title {
@@ -666,6 +669,10 @@ title {
     width: 45vh;
     height: 30vh;
   }
+  .eduardo {
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+  }
   .mainServicios .cajas_fuero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,7 +702,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .laboral .botonLaboral {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -718,7 +725,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .civil .botonCivil {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -741,7 +748,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .penal .botonPenal {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -764,7 +771,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .admin .botonAdmin {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -899,7 +906,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .laboral .botonLaboral {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -922,7 +929,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .civil .botonCivil {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -945,7 +952,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .penal .botonPenal {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -968,7 +975,7 @@ title {
     display: flex;
   }
   .mainServicios .cajas_fuero .admin .botonAdmin {
-    background-color: rgba(103, 245, 255, 0.514);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 50vh;
     margin: 5vh 5vh 0 5vh;
     -webkit-box-shadow: none;
@@ -1151,10 +1158,6 @@ title {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: foto1;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
   }
   .mainNosotros .mainNosotros__section .equipo {
     -ms-grid-row: 2;
@@ -1168,10 +1171,6 @@ title {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     grid-area: foto2;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 2vh;
-    border: 1vh solid black;
   }
   .mainNosotros .mainNosotros__section .eduardotex {
     -ms-grid-row: 4;

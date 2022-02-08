@@ -151,8 +151,7 @@ footer{
                     padding: 0 1vh;
                     margin: 0 1vh;
                     img{
-                        height:5vh;
-                        width:5vh;
+                        @include sizes (5vh,5vh)
                     }
                 }
             }

@@ -223,11 +223,10 @@
         }
 
         .eduardo{
+            @extend .fotos;
             grid-area:foto1;
-            height: 40vh;
-            width: auto;
-            margin-bottom:2vh;
-            border:1vh solid black;
+            box-shadow: -.7vh .7vh 12px gray;
+
         }
 
 
@@ -237,11 +236,9 @@
         }
 
         .gaston{
+            @extend .fotos;
             grid-area:foto2;
-            height: 40vh;
-            width: auto;
-            margin-bottom:2vh;
-            border:1vh solid black;
+            box-shadow: .7vh .7vh 12px gray;
         }   
         .gastontex{
             grid-area:texto2;
@@ -250,9 +247,6 @@
     }
 
 }
-
-
-
 
 
 

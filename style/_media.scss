@@ -105,6 +105,10 @@
         }
     }
 
+    .eduardo{
+        box-shadow: 0 0 0 0;
+    }
+
     .mainServicios{
         .cajas_fuero{
             display: flex;
@@ -122,7 +126,7 @@
                     display: flex;                
                 }
                 .botonLaboral{
-                    background-color: rgba(103, 245, 255, 0.514);
+                    background-color: rgba(0, 0, 0, 0.623);
                     width: 50vh;
                     margin:5vh 5vh 0 5vh;
                     box-shadow: none;
@@ -142,13 +146,13 @@
                     
                     }
                     .botonCivil{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
                         
                     }
-            }
+               }
                 .penal{
                     justify-items: center;
                     
@@ -162,7 +166,7 @@
                     
                     }
                     .botonPenal{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
@@ -182,14 +186,14 @@
                     
                     }
                     .botonAdmin{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
                         
                     }
                 }
-        }  
+        }   
     }
 
 
@@ -330,7 +334,7 @@
                 
                 }
                 .botonLaboral{
-                    background-color: rgba(103, 245, 255, 0.514);
+                    background-color: rgba(0, 0, 0, 0.623);
                     width: 50vh;
                     margin:5vh 5vh 0 5vh;
                     box-shadow: none;
@@ -350,7 +354,7 @@
                     
                     }
                     .botonCivil{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
@@ -370,7 +374,7 @@
                     
                     }
                     .botonPenal{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
@@ -390,7 +394,7 @@
                     
                     }
                     .botonAdmin{
-                        background-color: rgba(103, 245, 255, 0.514);
+                        background-color: rgba(0, 0, 0, 0.623);
                         width: 50vh;
                         margin:5vh 5vh 0 5vh;
                         box-shadow: none;
@@ -547,7 +551,7 @@
                 height: 11vh;
                 width: auto;
                 background-color: black;
-                .cuadrado1,.cuadrado2,.cuadrado3{
+                .cuadrado1, .cuadrado2, .cuadrado3{
                     justify-content:space-around;
                     height: 23vh;
                     width: 50vh;
@@ -560,14 +564,13 @@
                     bottom:20vh;
                     border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
                     flex-wrap: wrap;
-       
+                    
                     p{
                         align-self: center;
                         text-align: justify;
                     }
                             
                 }
-    
             }   
     
        
@@ -600,10 +603,6 @@
     
             .eduardo{
                 grid-area:foto1;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
             }
             .equipo{
                 grid-area: texto;
@@ -613,10 +612,7 @@
     
             .gaston{
                 grid-area:foto2;
-                height: 40vh;
-                width: auto;
-                margin-bottom:2vh;
-                border:1vh solid black;
+
             }
     
             .eduardotex{
