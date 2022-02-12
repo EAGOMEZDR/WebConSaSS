@@ -2,13 +2,13 @@
 semi-bold 600 italic*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 /*cinzel semibold 600*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 /*roboto */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
 /*SURANNA*/
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 /*MARKAZI*/
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Markazi+Text:wght@500&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
 /*cookie*/
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 /*raleway*/
@@ -576,6 +576,10 @@ footer .redesSociales ul li a img {
 }
 
 title {
+  display: none;
+}
+
+script {
   display: none;
 }
 
