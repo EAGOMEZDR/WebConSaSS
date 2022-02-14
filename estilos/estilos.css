@@ -37,6 +37,11 @@ header h4 {
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
+  font-size: 1.8vh;
+}
+
+.textoHomePage {
+  font-size: 1vh;
 }
 
 h2, h3, h4, h5, h6 {
@@ -67,7 +72,7 @@ h2, h3, h4, h5, h6 {
 
 .fotos, .mainNosotros .mainNosotros__section .eduardo, .mainNosotros .mainNosotros__section .gaston {
   height: 40vh;
-  width: auto;
+  width: 40vh;
   margin-bottom: 2vh;
   border: 1vh solid black;
 }
@@ -320,7 +325,9 @@ h2, h3, h4, h5, h6 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: texto1;
-  padding: 0 15vh 10vh 15vh;
+  padding: 0 12vh 10vh 12vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8vh;
 }
 
 .mainNosotros .mainNosotros__section .gaston {
@@ -335,7 +342,9 @@ h2, h3, h4, h5, h6 {
   -ms-grid-row: 8;
   -ms-grid-column: 1;
   grid-area: texto2;
-  padding: 0 15vh 5vh 15vh;
+  padding: 0 12vh 10vh 12vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8vh;
 }
 
 /*CONTACTENOS*/
@@ -463,13 +472,13 @@ header .barra-datos .whatsapp {
 }
 
 header .barra-datos .whatsappN {
-  font-size: 1.4vh;
-  margin: .15vh .5vh .5vh .2vh;
+  font-size: 1.1vh;
+  margin: .15vh 2vh .5vh .5vh;
 }
 
 header .barra-datos .mail {
   height: 1.6vh;
-  width: auto;
+  width: 1.3vh;
   margin: .48vh .15vh .5vh 1vh;
 }
 
@@ -650,10 +659,11 @@ script {
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 20vh;
+    height: 25vh;
+    background: green;
     width: auto;
     padding: 3vh;
-    margin: 0 auto 3vh auto;
+    margin: 0 auto 5vh auto;
     background-color: rgba(0, 0, 0, 0.74);
     border-radius: 12%;
     z-index: 100;
@@ -985,6 +995,15 @@ script {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .equipo {
+    margin: 0 8vh;
+  }
+  .eduardotex {
+    margin: 0 10vh;
+  }
+  .gastontex {
+    margin: 0 10vh;
+  }
   footer p {
     font-size: 3vh;
     padding: 3vh 0;
@@ -1010,6 +1029,15 @@ script {
     background-color: black;
     border: 1vh solid black;
     border-radius: 3%;
+  }
+  .equipo {
+    margin: 0 15vh;
+  }
+  .eduardotex {
+    margin: 0 30vh;
+  }
+  .gastontex {
+    margin: 0 30vh;
   }
   .mainIndex section .contenedor_palacio {
     display: -webkit-box;
@@ -1048,9 +1076,9 @@ script {
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 23vh;
-    width: 35vh;
-    padding: 1vh;
+    height: 20vh;
+    width: 40vh;
+    padding: 1vh 2vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.74);
     border-radius: 12%;
@@ -1118,9 +1146,9 @@ script {
   .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 23vh;
-    width: 50vh;
-    padding: 1vh;
+    height: 25vh;
+    width: 55vh;
+    padding: 1vh 2vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.603);
     border-radius: 12%;

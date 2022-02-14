@@ -232,7 +232,9 @@
 
         .eduardotex{
             grid-area:texto1;
-            padding:0 15vh 10vh 15vh;
+            padding:0 12vh 10vh 12vh;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.8vh;
         }
 
         .gaston{
@@ -242,7 +244,9 @@
         }   
         .gastontex{
             grid-area:texto2;
-            padding:0 15vh 5vh 15vh;
+            padding:0 12vh 10vh 12vh;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.8vh;
         }
     }
 
