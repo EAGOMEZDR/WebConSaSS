@@ -5,6 +5,8 @@ semi-bold 600 italic*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 /*roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+/*roboto serif*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap");
 /*SURANNA*/
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 /*MARKAZI*/
@@ -18,7 +20,8 @@ font-family: 'Markazi Text', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Suranna', serif;
-font-family: 'Cookie', cursive;*/
+font-family: 'Cookie', cursive;
+'Roboto Serif', sans-serif;*/
 header h1 {
   font-family: 'Suranna', serif;
   font-size: 4.5vh;
@@ -35,8 +38,7 @@ header h4 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto Serif', sans-serif;
   font-size: 1.8vh;
 }
 
@@ -44,7 +46,7 @@ p {
   font-size: 1vh;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
@@ -101,6 +103,7 @@ h2, h3, h4, h5, h6 {
 .mainServicios .mainServicios__section h5 {
   margin: 0 8vh;
   text-align: justify;
+  font-family: 'Roboto Serif', sans-serif;
 }
 
 .mainServicios .cajas_fuero {
@@ -326,8 +329,7 @@ h2, h3, h4, h5, h6 {
   -ms-grid-column: 1;
   grid-area: texto1;
   padding: 0 12vh 10vh 12vh;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.8vh;
+  font-size: 2vh;
 }
 
 .mainNosotros .mainNosotros__section .gaston {
@@ -343,8 +345,7 @@ h2, h3, h4, h5, h6 {
   -ms-grid-column: 1;
   grid-area: texto2;
   padding: 0 12vh 10vh 12vh;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.8vh;
+  font-size: 2vh;
 }
 
 /*CONTACTENOS*/

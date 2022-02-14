@@ -21,6 +21,7 @@
         h5{
             margin:0 8vh;
             text-align: justify;
+            font-family: 'Roboto Serif', sans-serif;;
         }
     }
 
@@ -233,8 +234,7 @@
         .eduardotex{
             grid-area:texto1;
             padding:0 12vh 10vh 12vh;
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.8vh;
+            font-size: 2vh;
         }
 
         .gaston{
@@ -245,8 +245,7 @@
         .gastontex{
             grid-area:texto2;
             padding:0 12vh 10vh 12vh;
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.8vh;
+            font-size: 2vh;
         }
     }
 

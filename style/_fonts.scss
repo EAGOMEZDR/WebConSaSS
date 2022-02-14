@@ -12,6 +12,9 @@ semi-bold 600 italic*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
+/*roboto serif*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap');
+
 /*SURANNA*/
 @import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
 /*MARKAZI*/
@@ -30,7 +33,8 @@ font-family: 'Markazi Text', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Suranna', serif;
-font-family: 'Cookie', cursive;*/
+font-family: 'Cookie', cursive;
+'Roboto Serif', sans-serif;*/
 
 header{
     h1 {
@@ -51,8 +55,8 @@ header{
 }
 
 p{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-family: 'Roboto Serif', sans-serif;
+
     font-size:1.8vh;
 }
 
@@ -62,7 +66,7 @@ p{
 
 }
 
-h2,h3,h4,h5,h6 {
+h2,h3,h4 {
     font-family:'Roboto', sans-serif;
     font-weight: 600;
 }
