@@ -749,7 +749,7 @@ script {
     width: auto;
     margin: auto;
   }
-  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 25vh;
@@ -766,7 +766,7 @@ script {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -963,7 +963,7 @@ script {
     width: auto;
     margin: auto;
   }
-  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 25vh;
@@ -979,7 +979,7 @@ script {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1176,11 +1176,11 @@ script {
     height: auto;
     width: auto;
   }
-  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 32vh;
-    width: 61vh;
+    width: 54vh;
     padding: 3vh 4vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.74);
@@ -1194,7 +1194,7 @@ script {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1472,11 +1472,11 @@ script {
     width: auto;
     background-color: black;
   }
-  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2, .mainIndex section .items .cuadrado3 {
+  .mainIndex section .items .cuadrado1, .mainIndex section .items .cuadrado2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 27vh;
-    width: 78vh;
+    width: 71vh;
     padding: 3vh 5vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.651);
@@ -1490,7 +1490,7 @@ script {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p, .mainIndex section .items .cuadrado3 p {
+  .mainIndex section .items .cuadrado1 p, .mainIndex section .items .cuadrado2 p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
