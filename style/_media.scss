@@ -115,23 +115,28 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding:25vh 0 0 0;
-            margin:60vh 0 0 0;
+            padding:20vh 0 0 0;
+            margin:70vh 0 55vh 0;
+            justify-items: center;
+
             .laboral{
                 justify-items: center;
+
                  
                 .listaLaboral{
                     background-color: rgba(70, 70, 70, 0.432);
                     justify-content: space-evenly;
-                    width: auto;
+                    width: 45vh;
                     flex-wrap: wrap;
                     visibility: visible;
-                    display: flex;                
+                    display: flex;
+                    position:relative;         
+                    right:2vh;    
                 }
                 .botonLaboral{
                     background-color: rgba(0, 0, 0, 0.623);
-                    width: 50vh;
-                    margin:5vh 5vh 0 5vh;
+                    width: 45vh;
+                    margin:2vh 5vh 0 2vh;
                     box-shadow: none;
                     
                 }
@@ -142,16 +147,18 @@
                     .listaCivil{
                         background-color: rgba(70, 70, 70, 0.432);
                         justify-content: space-evenly;
-                        width: auto;
+                    width: 45vh;
                         flex-wrap: wrap;
                         visibility: visible;
                         display: flex;
+                        position:relative;         
+                        right:2vh;    
                     
                     }
                     .botonCivil{
                         background-color: rgba(0, 0, 0, 0.623);
-                        width: 50vh;
-                        margin:5vh 5vh 0 5vh;
+                        width: 45vh;
+                        margin:2vh 5vh 0 2vh;
                         box-shadow: none;
                         
                     }
@@ -162,16 +169,18 @@
                     .listaPenal{
                         background-color: rgba(70, 70, 70, 0.432);
                         justify-content: space-evenly;
-                        width: auto;
+                        width: 45vh;
                         flex-wrap: wrap;
                         visibility: visible;
                         display: flex;
+                        position:relative;         
+                        right:2vh;    
                     
                     }
                     .botonPenal{
                         background-color: rgba(0, 0, 0, 0.623);
-                        width: 50vh;
-                        margin:5vh 5vh 0 5vh;
+                        width: 45vh;
+                        margin:2vh 5vh 0 2vh;
                         box-shadow: none;
                         
                     }
@@ -182,16 +191,18 @@
                     .listaAdmin{
                         background-color: rgba(70, 70, 70, 0.432);
                         justify-content: space-evenly;
-                        width: auto;
+                        width: 45vh;
                         flex-wrap: wrap;
                         visibility: visible;
                         display: flex;
+                        position:relative;         
+                        right:2vh; 
                     
                     }
                     .botonAdmin{
                         background-color: rgba(0, 0, 0, 0.623);
-                        width: 50vh;
-                        margin:5vh 5vh 0 5vh;
+                        width: 45vh;
+                        margin:2vh 5vh 0 2vh;
                         box-shadow: none;
                         
                     }
@@ -324,9 +335,9 @@
         .cajas_fuero{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            padding:25vh 0 0 0;
-            margin:60vh 0 0 0;
+            padding:20vh 0 0 0;
+            margin:45vh 0 55vh 0;
+            justify-items: center;
             .laboral{
                 justify-items: center;
                  
@@ -555,7 +566,7 @@
             display: flex;
             flex-direction: row;
             justify-content:space-around; 
-            padding-bottom:50vh;       
+            padding-bottom:60vh;       
 
             .laboral{
                 justify-items: center;

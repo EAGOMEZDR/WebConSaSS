@@ -791,8 +791,9 @@ script {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 25vh 0 0 0;
-    margin: 60vh 0 0 0;
+    padding: 20vh 0 0 0;
+    margin: 70vh 0 55vh 0;
+    justify-items: center;
   }
   .mainServicios .cajas_fuero .laboral {
     justify-items: center;
@@ -802,18 +803,20 @@ script {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: auto;
+    width: 45vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    right: 2vh;
   }
   .mainServicios .cajas_fuero .laboral .botonLaboral {
     background-color: rgba(0, 0, 0, 0.623);
-    width: 50vh;
-    margin: 5vh 5vh 0 5vh;
+    width: 45vh;
+    margin: 2vh 5vh 0 2vh;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -825,18 +828,20 @@ script {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: auto;
+    width: 45vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    right: 2vh;
   }
   .mainServicios .cajas_fuero .civil .botonCivil {
     background-color: rgba(0, 0, 0, 0.623);
-    width: 50vh;
-    margin: 5vh 5vh 0 5vh;
+    width: 45vh;
+    margin: 2vh 5vh 0 2vh;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -848,18 +853,20 @@ script {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: auto;
+    width: 45vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    right: 2vh;
   }
   .mainServicios .cajas_fuero .penal .botonPenal {
     background-color: rgba(0, 0, 0, 0.623);
-    width: 50vh;
-    margin: 5vh 5vh 0 5vh;
+    width: 45vh;
+    margin: 2vh 5vh 0 2vh;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -871,18 +878,20 @@ script {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: auto;
+    width: 45vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    right: 2vh;
   }
   .mainServicios .cajas_fuero .admin .botonAdmin {
     background-color: rgba(0, 0, 0, 0.623);
-    width: 50vh;
-    margin: 5vh 5vh 0 5vh;
+    width: 45vh;
+    margin: 2vh 5vh 0 2vh;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -997,11 +1006,9 @@ script {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 25vh 0 0 0;
-    margin: 60vh 0 0 0;
+    padding: 20vh 0 0 0;
+    margin: 45vh 0 55vh 0;
+    justify-items: center;
   }
   .mainServicios .cajas_fuero .laboral {
     justify-items: center;
@@ -1222,7 +1229,7 @@ script {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-bottom: 50vh;
+    padding-bottom: 60vh;
   }
   .mainServicios .cajas_fuero .laboral {
     justify-items: center;
