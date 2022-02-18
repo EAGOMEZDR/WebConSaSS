@@ -1,6 +1,6 @@
 /*MOBILE*/
 
-@media (max-width:500px){
+@media (max-width:700px){
 
     body{
         .sombra{
@@ -114,7 +114,9 @@
         .cajas_fuero{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
+            padding:25vh 0 0 0;
+            margin:60vh 0 0 0;
             .laboral{
                 justify-items: center;
                  
@@ -210,11 +212,13 @@
     }
 
 
-    
+    .botonRedOff{
+        display:none;
+    }
 
 }
 
-@media (min-width:501px) and (max-width:990px){
+@media (min-width:701px) and (max-width:990px){
     body{
         .sombra{
             width:100%;
@@ -283,7 +287,7 @@
                 margin:auto;
                 .cuadrado1,.cuadrado2,.cuadrado3{
                     justify-content:space-around;
-                    height: 20vh;
+                    height: 25vh;
                     width: auto;
                     padding:3vh;
                     margin:0 auto 3vh auto;
@@ -309,7 +313,6 @@
     
     } 
 
-
     .mainLinks__div{
         iframe{
             width:60vh;
@@ -322,6 +325,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            padding:25vh 0 0 0;
+            margin:60vh 0 0 0;
             .laboral{
                 justify-items: center;
                  
@@ -427,6 +432,10 @@
         z-index: 6000;
     }
 
+    .botonRedOff{
+        display:none;
+    }
+
 }
 
 @media (min-width:991px) and (max-width:1280px){
@@ -494,21 +503,24 @@
                 width: auto;
                 .cuadrado1,.cuadrado2,.cuadrado3{
                     justify-content:space-around;
-                    height: 20vh;
-                    width: 40vh;
-                    padding:1vh 2vh;
+                    height: 32vh;
+                    width: 61vh;
+                    padding:3vh 4vh;
                     margin:auto;
                     background-color:rgba(0, 0, 0, 0.74);
                     border-radius: 12%;
                     z-index: 100;
                     position: relative;
                     bottom:5vh;
-                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    border-bottom: .3vh solid rgba(255, 255, 255, 0.514);
+                    box-shadow: 18px 5px 12px #7c7c7ca9;
                     flex-wrap: wrap;
     
                     p{
                         align-self: center;
                         text-align: justify;
+                        font-family:'Roboto Serif', sans-serif;
+                        font-size: 2.8vh;  
                     }
                             
                 }
@@ -519,6 +531,246 @@
         }
 
     } 
+
+
+    .navbar-nav li{
+        margin: 0 .6vh;
+        padding:0 .6vh;
+    
+        &:first-child{
+            margin-left:.5vh;
+        }
+    
+        &:last-child{
+            white-space: nowrap;
+
+
+        }
+    
+        
+    }
+
+    .mainServicios{
+        .cajas_fuero{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around; 
+            padding-bottom:50vh;       
+
+            .laboral{
+                justify-items: center;
+                 
+                .listaLaboral{
+                text-align: center;
+                display:block;
+                background-color: rgba(0, 0, 0, 0.623);
+                width: 23vh;
+                position:absolute;
+                top: 61.15vh;
+                border-radius: 0 0 10% 10%;
+                box-shadow: 7px 10px 12px #888888;
+                height:0vh;
+                transition: height 1.5s;
+                
+                
+                    li{
+                        color:rgb(255, 255, 255);
+                        padding: 1vh .5vh;
+                        padding-right:2rem;
+                        margin: .5vh;
+                        visibility:hidden;
+                        
+                    }
+    
+                }
+        
+                .botonLaboral{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    
+                    &:hover + .listaLaboral {
+                        height:41vh;                  
+                    }
+    
+                    &:hover + .listaLaboral li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+    
+    
+                }
+        
+            }
+        
+            .civil{
+                justify-items: center;
+                
+                .listaCivil{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                            
+                            &:first-child:hover  .botonCivil {
+                                color:rgb(255, 255, 255);
+                                visibility:visible;
+                            }
+                        }
+                
+                }
+                .botonCivil{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+    
+                    &:hover + .listaCivil {
+                        height:41vh;                  
+                    }
+    
+                    &:hover + .listaCivil li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        
+            .penal{
+                justify-items: center;
+                
+                .listaPenal{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                        }
+        
+                    }
+        
+                .botonPenal{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    &:hover + .listaPenal {
+                        height:41vh;                  
+                    }
+    
+                    &:hover + .listaPenal li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        
+            .admin{
+                justify-items: center;
+                
+                .listaAdmin{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                        }
+                }
+        
+                .botonAdmin{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    &:hover + .listaAdmin {
+                        height:41vh;                  
+                    }
+    
+                    &:hover + .listaAdmin li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        }
+    }
+    
+
     footer{
         p{
             font-size: 3vh;
@@ -576,21 +828,24 @@
                 background-color: black;
                 .cuadrado1, .cuadrado2, .cuadrado3{
                     justify-content:space-around;
-                    height: 25vh;
-                    width: 55vh;
-                    padding:1vh 2vh;
+                    height: 27vh;
+                    width: 78vh;
+                    padding:3vh 5vh;
                     margin:auto;
-                    background-color:rgba(0, 0, 0, 0.603);
-                    border-radius: 12%;
+                    background-color:rgba(0, 0, 0, 0.651);
+                    border-radius: 11%;
                     z-index: 100;
                     position: relative;
                     bottom:20vh;
-                    border-bottom: .5vh solid rgba(255, 255, 255, 0.514);
+                    border-bottom: .3vh solid rgba(255, 255, 255, 0.514);
+                    box-shadow: 18px 5px 12px #7c7c7ca9;
                     flex-wrap: wrap;
                     
                     p{
                         align-self: center;
                         text-align: justify;
+                        font-family:'Roboto Serif', sans-serif;
+                        font-size: 3vh;  
                     }
                             
                 }
@@ -601,6 +856,223 @@
         
     
     } 
+
+    .mainServicios{
+        .cajas_fuero{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom:17vh;
+            
+            
+            
+            .laboral{
+                justify-items: center;
+                 
+                .listaLaboral{
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.623);
+                width: 23vh;
+                position:absolute;
+                top: 61.15vh;
+                border-radius: 0 0 10% 10%;
+                box-shadow: 7px 10px 12px #888888;
+                height:0vh;
+                transition: height 1.5s;
+                
+                
+                    li{
+                        color:rgb(255, 255, 255);
+                        padding: 1vh .5vh;
+                        padding-right:2rem;
+                        margin: .5vh;
+                        visibility:hidden;
+                        
+                    }
+    
+                }
+        
+                .botonLaboral{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    
+                    &:hover + .listaLaboral {
+                        height:43vh;                  
+                    }
+    
+                    &:hover + .listaLaboral li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+    
+    
+                }
+        
+            }
+        
+            .civil{
+                justify-items: center;
+                
+                .listaCivil{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                            
+                        }
+                
+                }
+                .botonCivil{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+    
+                    &:hover + .listaCivil {
+                        height:43vh;             
+                    }
+    
+                    &:hover + .listaCivil li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        
+            .penal{
+                justify-items: center;
+                
+                .listaPenal{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                        }
+        
+                    }
+        
+                .botonPenal{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    padding: 1vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    position: absolute;
+                    align-content: center;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    &:hover + .listaPenal {
+                        height:43vh;              
+                    }
+    
+                    &:hover + .listaPenal li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        
+            .admin{
+                justify-items: center;
+                
+                .listaAdmin{
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.623);
+                    width: 23vh;
+                    position:absolute;
+                    top: 61.15vh;
+                    border-radius: 0 0 10% 10%;
+                    box-shadow: 7px 10px 12px #888888;
+                    height:0vh;
+                    transition: height 1.5s;
+                    
+                    
+                        li{
+                            color:rgb(255, 255, 255);
+                            padding: 1vh .5vh;
+                            padding-right:2rem;
+                            margin: .5vh;
+                            visibility:hidden;
+                            
+                        }
+                }
+        
+                .botonAdmin{
+                    background-color: rgba(0, 0, 0, 0.562);
+                    height:10vh;
+                    width: 25vh;
+                    margin:5vh 5vh 0 5vh;
+                    text-align: center;
+                    align-content: center;
+                    position: absolute;
+                    border-radius: .8vh;
+                    border: .2vh solid rgb(153, 153, 153);
+                    box-shadow: 15px 0px 12px #888888;
+                    &:hover + .listaAdmin {
+                        height:43vh;                  
+                    }
+    
+                    &:hover + .listaAdmin li{
+                        animation-name: menu; 
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+        
+            }
+        }
+    }
 
     .mainNosotros{
        
@@ -649,6 +1121,21 @@
             }
         }
     
+    }
+
+    .navbar-nav li{
+        margin: 0 2.3vh;
+        padding:0 2.3vh;
+    
+        &:first-child{
+            margin-left:8vh;
+        }
+    
+        &:last-child{
+            white-space:nowrap;
+        }
+    
+        
     }
 
     footer{

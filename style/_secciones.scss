@@ -8,18 +8,24 @@
     background-image:url(../imagenes/wallServicios.png);
     background-size:auto;
     background-blend-mode: multiply;
+    padding-top:25vh;
+    
 
     .mainServicios__section{
         text-align: center;
         text-justify: auto;
+        height:15vh;
+        width:100%;
+        position:absolute;
         h2{
-            padding: 2vh;
-            margin-bottom: 5vh;
-            margin-top:10vh;
+            padding: 1vh;
+            margin-bottom: 3vh;
+            margin-top:1.5vh;
             text-decoration:underline ;
         }
         h5{
-            margin:0 8vh;
+            margin:0 4vh;
+            padding:1.5vh .3vh;
             text-align: justify;
             font-family: 'Roboto Serif', sans-serif;;
         }
@@ -29,6 +35,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        height:50vh;
+        padding:5vh 0 0 0;
+        margin:15vh 0 0 0;
+        width:100%;
+
         
         
         
@@ -272,6 +283,10 @@
 }
 .form-black{
     color:black;
+}
+
+.textForms option{
+    color:rgb(0, 0, 0);
 }
 
 /*LINKS*/

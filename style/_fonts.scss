@@ -28,13 +28,17 @@ semi-bold 600 italic*/
 /*raleway*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+//redressed
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 /*font-family: 'Cinzel', serif;
 font-family: 'Markazi Text', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Suranna', serif;
 font-family: 'Cookie', cursive;
-'Roboto Serif', sans-serif;*/
+font-family:'Roboto Serif', sans-serif;
+font-family:'Redressed', cursive;*/
 
 header{
     h1 {
@@ -48,8 +52,8 @@ header{
     }
     
     h4{
-        font-size: 3.3vh;
-        font-family:'Cookie', cursive;
+        font-size: 2.8vh;
+        font-family: 'Redressed', cursive;
     }
 
 }
@@ -83,8 +87,14 @@ h2,h3,h4 {
 }
 
 #naviBar{
-    font-size: 1.8vh;
     font-weight: bold;
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.cuadrado1 p, .cuadrado2 p, .cuadrado3 p{
+    font-family:'Roboto Serif', sans-serif;
+    font-size: 2.4vh;   
 }
 
 .fuero{

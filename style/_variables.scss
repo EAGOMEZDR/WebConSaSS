@@ -11,3 +11,15 @@
     margin-bottom:2vh;
     border:1vh solid black;
 }
+
+@keyframes menu{
+    30% { color:rgba(255, 255, 255, 0); visibility:hidden;}
+    48% { color:rgba(255, 255, 255, 0); visibility:visible;}
+    50% { color:rgba(255, 255, 255, 0.400); visibility:visible;}
+    60% { color:rgba(255, 255, 255, 0.500); visibility:visible;}
+    70% { color:rgba(255, 255, 255, 0.600); visibility:visible;}
+    85% { color:rgba(255, 255, 255, 0.700); visibility:visible;}
+    90% { color:rgba(255, 255, 255, 0.800); visibility:visible;}
+    100% { color:rgb(255, 255, 255); visibility:visible;}
+    
+}
