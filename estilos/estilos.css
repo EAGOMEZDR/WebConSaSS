@@ -517,8 +517,8 @@ body {
   background-color: black;
   -ms-grid-columns: 2fr;
       grid-template-columns: 2fr;
-  -ms-grid-rows: .01fr 1fr .1fr;
-      grid-template-rows: .01fr 1fr .1fr;
+  -ms-grid-rows: .01fr 1.5fr .1fr;
+      grid-template-rows: .01fr 1.5fr .1fr;
       grid-template-areas: "head" "main" "foot";
 }
 
@@ -780,6 +780,12 @@ script {
     -webkit-box-shadow: 0 0 0 0;
             box-shadow: 0 0 0 0;
   }
+  .mainServicios {
+    padding-top: 25vh;
+  }
+  .mainServicios .mainServicios__h2, .mainServicios .mainServicios__h5 {
+    padding-bottom: 25vh;
+  }
   .mainServicios .cajas_fuero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -791,12 +797,13 @@ script {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 20vh 0 0 0;
-    margin: 70vh 0 55vh 0;
     justify-items: center;
+    padding-top: 90vh;
+    padding-bottom: 75vh;
   }
   .mainServicios .cajas_fuero .laboral {
     justify-items: center;
+    padding-top: 30vh;
   }
   .mainServicios .cajas_fuero .laboral .listaLaboral {
     background-color: rgba(70, 70, 70, 0.432);
@@ -872,6 +879,7 @@ script {
   }
   .mainServicios .cajas_fuero .admin {
     justify-items: center;
+    padding-bottom: 15vh;
   }
   .mainServicios .cajas_fuero .admin .listaAdmin {
     background-color: rgba(70, 70, 70, 0.432);
@@ -1123,7 +1131,7 @@ script {
   }
 }
 
-@media (min-width: 991px) and (max-width: 1280px) {
+@media (min-width: 991px) and (max-width: 1420px) {
   header {
     position: fixed;
     top: 0;
@@ -1441,7 +1449,7 @@ script {
 }
 
 /* ESCRITORIO */
-@media (min-width: 1281px) and (max-width: 5000px) {
+@media (min-width: 1421px) and (max-width: 5000px) {
   header {
     position: fixed;
     top: 0;

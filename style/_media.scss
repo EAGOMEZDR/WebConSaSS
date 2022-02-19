@@ -111,16 +111,24 @@
     }
 
     .mainServicios{
+
+        padding-top: 25vh;
+
+        .mainServicios__h2,.mainServicios__h5{
+            padding-bottom: 25vh;
+        }
+
         .cajas_fuero{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding:20vh 0 0 0;
-            margin:70vh 0 55vh 0;
             justify-items: center;
+            padding-top:90vh;
+            padding-bottom: 75vh;
 
             .laboral{
                 justify-items: center;
+                padding-top:30vh;
 
                  
                 .listaLaboral{
@@ -187,6 +195,7 @@
                 }
                 .admin{
                     justify-items: center;
+                    padding-bottom: 15vh;
                     
                     .listaAdmin{
                         background-color: rgba(70, 70, 70, 0.432);
@@ -449,7 +458,7 @@
 
 }
 
-@media (min-width:991px) and (max-width:1280px){
+@media (min-width:991px) and (max-width:1420px){
 
     header{
         position:fixed;
@@ -797,7 +806,7 @@
 
 /* ESCRITORIO */
 
-@media (min-width:1281px) and (max-width:5000px){
+@media (min-width:1421px) and (max-width:5000px){
 
     header{
         position:fixed;
