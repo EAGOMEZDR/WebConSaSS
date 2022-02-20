@@ -523,7 +523,7 @@ body {
 }
 
 body .sombra {
-  height: 14.8vh;
+  height: 15vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -1235,8 +1235,9 @@ script {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-bottom: 60vh;
   }
   .mainServicios .cajas_fuero .laboral {
