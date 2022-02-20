@@ -30,13 +30,13 @@ header h1 {
 }
 
 header h2 {
-  font-size: 2.6vh;
+  font-size: 2.2vh;
   font-family: 'Cinzel', serif;
 }
 
 header h4 {
-  font-size: 2.8vh;
-  font-family: 'Redressed', cursive;
+  font-size: 1.9vh;
+  font-family: 'Cinzel', serif;
 }
 
 p {
@@ -67,10 +67,10 @@ h2, h3, h4 {
 #naviBar {
   font-weight: bold;
   font-size: 2.5vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
 }
 
-.cuadrado1 p, .cuadrado2 p, .cuadrado3 p {
+.cuadrado1 p, .cuadrado2 p {
   font-family: 'Roboto Serif', sans-serif;
   font-size: 2.4vh;
 }
@@ -523,7 +523,7 @@ body {
 }
 
 body .sombra {
-  height: 18.7vh;
+  height: 14.8vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -781,7 +781,8 @@ script {
             box-shadow: 0 0 0 0;
   }
   .mainServicios {
-    padding-top: 25vh;
+    padding-top: 20vh;
+    margin-bottom: 25vh;
   }
   .mainServicios .mainServicios__h2, .mainServicios .mainServicios__h5 {
     padding-bottom: 25vh;
@@ -803,7 +804,7 @@ script {
   }
   .mainServicios .cajas_fuero .laboral {
     justify-items: center;
-    padding-top: 30vh;
+    padding-top: 40vh;
   }
   .mainServicios .cajas_fuero .laboral .listaLaboral {
     background-color: rgba(70, 70, 70, 0.432);
@@ -879,7 +880,6 @@ script {
   }
   .mainServicios .cajas_fuero .admin {
     justify-items: center;
-    padding-bottom: 15vh;
   }
   .mainServicios .cajas_fuero .admin .listaAdmin {
     background-color: rgba(70, 70, 70, 0.432);
